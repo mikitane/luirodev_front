@@ -1,12 +1,8 @@
 <template>
   <div>
-    <v-app-bar>
-
-    </v-app-bar>
-    <v-content>
-      <slot/>
-    </v-content>
+    <p>Terve</p>
   </div>
+
 </template>
 
 <script>
