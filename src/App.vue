@@ -1,29 +1,24 @@
 <template>
-  <v-app>
-    <component :is="layout">
-      <router-view />
-    </component>
-  </v-app>
+  <component :is="template">
+    <router-view />
+  </component>
 </template>
 
 <script>
-import DefaultLayout from '@/pages/templates/DefaultLayout';
+import DefaultTemplate from '@/pages/templates/DefaultTemplate';
 
 export default {
   name: 'App',
-
   components: {
-    DefaultLayout,
+    DefaultTemplate
   },
-
-  computed: {
-    layout: function() {
-      return  'DefaultLayout'; // this.$router.meta.layout ||
-    }
-  },
-
   data: () => ({
     //
   }),
+  computed: {
+    template: function() {
+      return (this.$router.meta && this.$router.meta.template) || 'DefaultTemplate';
+    }
+  }
 };
 </script>
