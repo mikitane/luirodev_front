@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 620 474" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ComputerTable</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="271" height="235"></rect>
+        <path d="M0,0 L591,0 L591,22 C591,23.1045695 590.104569,24 589,24 L2,24 C0.8954305,24 1.3527075e-16,23.1045695 0,22 L0,0 L0,0 Z" id="path-3"></path>
+        <path d="M0,0 L20,0 L20,175 C20,176.104569 19.1045695,177 18,177 L2,177 C0.8954305,177 1.3527075e-16,176.104569 0,175 L0,0 L0,0 Z" id="path-5"></path>
+        <path d="M19,0.0848888922 L32,0.0848888922 C35.2383969,0.0848888922 37.8775718,2.65046378 37.9958615,5.85995063 L38,6.08488889 L42,6.08488889 C46.418278,6.08488889 50,9.66661089 50,14.0848889 L50,16.0848889 L0,16.0848889 L0,14.0848889 C-5.41083001e-16,9.66661089 3.581722,6.08488889 8,6.08488889 L13,6.08488889 C13,2.77118039 15.6862915,0.0848888922 19,0.0848888922 Z" id="path-7"></path>
+        <path d="M4.13212023,0 C13.7427193,-1.76543842e-15 21.9139991,6.1624588 24.9100573,14.7514742 C28.1135995,14.87478 30.6732651,17.5116034 30.6732651,20.7462687 L30.6732651,23.7462687 C30.6732651,26.9846656 28.1076902,29.6238405 24.8982034,29.7421302 L24.7297194,29.7460418 C21.5961528,38.0745161 13.556122,44 4.13212023,44 L0.853535884,44 C0.455109018,44 0.132120227,43.6770112 0.132120227,43.2785843 L0.132120227,1.02029736 C0.132120227,0.494369 0.530046124,0.0613812117 1.04124495,0.00598696601 L1.15241759,0 L4.13212023,0 Z" id="path-9"></path>
+        <path d="M34,0 L66,0 L66,30 L96,30 C98.209139,30 100,31.790861 100,34 L100,38 L0,38 L0,34 C-2.705415e-16,31.790861 1.790861,30 4,30 L34,30 L34,0 Z" id="path-11"></path>
+        <rect id="path-13" x="0" y="0" width="268" height="156" rx="4"></rect>
+        <rect id="path-15" x="0" y="0" width="260" height="148" rx="2"></rect>
+        <path d="M0,0 L30,0 L30,30 C30,33.3137085 27.3137085,36 24,36 L6,36 C2.6862915,36 4.05812251e-16,33.3137085 0,30 L0,0 L0,0 Z" id="path-17"></path>
+        <rect id="path-19" x="0" y="0" width="220" height="8" rx="2"></rect>
+        <path d="M11,0 L15,0 C21.0751322,-1.11598369e-15 26,4.92486775 26,11 L26,11 L26,11 L0,11 C-7.43989126e-16,4.92486775 4.92486775,1.11598369e-15 11,0 Z" id="path-21"></path>
+    </defs>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-2266.000000, -996.000000)">
+            <g id="ComputerTable" transform="translate(2266.000000, 996.000000)">
+                <g id="Window" opacity="0.500069754" transform="translate(20.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#564B43" x="0" y="0" width="290" height="256" rx="1"></rect>
+                    <g id="Rectangle" transform="translate(10.000000, 10.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#141944" xlink:href="#path-1"></use>
+                        <g id="Group-16" mask="url(#mask-2)" fill="#FFFFFF" fill-opacity="0.1">
+                            <g transform="translate(114.500000, 159.000000) rotate(90.000000) translate(-114.500000, -159.000000) translate(-52.000000, -4.000000)" id="Rectangle">
+                                <rect transform="translate(208.384037, 222.615963) rotate(45.000000) translate(-208.384037, -222.615963) " x="202.384037" y="83.1159633" width="12" height="279"></rect>
+                                <rect transform="translate(213.001046, 196.998954) rotate(45.000000) translate(-213.001046, -196.998954) " x="210.501046" y="30.498954" width="5" height="333"></rect>
+                                <rect transform="translate(151.515765, 199.484235) rotate(45.000000) translate(-151.515765, -199.484235) " x="149.515765" y="44.4842354" width="4" height="310"></rect>
+                                <rect transform="translate(38.976659, 38.023341) rotate(45.000000) translate(-38.976659, -38.023341) " x="36.9766594" y="-12.9766594" width="4" height="102"></rect>
+                                <rect transform="translate(75.806872, 159.193128) rotate(45.000000) translate(-75.806872, -159.193128) " x="71.8068722" y="56.6931278" width="8" height="205"></rect>
+                                <rect transform="translate(75.392659, 146.607341) rotate(45.000000) translate(-75.392659, -146.607341) " x="73.3926586" y="44.1073414" width="4" height="205"></rect>
+                                <rect transform="translate(146.980231, 191.019769) rotate(45.000000) translate(-146.980231, -191.019769) " x="142.980231" y="43.0197693" width="8" height="296"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <circle id="Oval" fill="#FFFFFF" cx="95.5" cy="35.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="44.5" cy="94.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="70.5" cy="164.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="29.5" cy="205.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="121.5" cy="201.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="179.5" cy="44.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="114.5" cy="79.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="19.5" cy="27.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="263.5" cy="62.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="264.5" cy="20.5" r="1.5"></circle>
+                    <path d="M145.25,6.75 L145.75,251.25" id="Line-2" stroke="#564B43" stroke-width="8" stroke-linecap="square"></path>
+                    <path d="M7,129 L293,129" id="Line-2" stroke="#564B43" stroke-width="8" stroke-linecap="square"></path>
+                    <path d="M106,50 L105.704337,50.0960843 C97.1605618,52.9402809 91,61.0007023 91,70.5 C91,82.3741221 100.625878,92 112.5,92 C115.67954,92 118.697878,91.3098146 121.413368,90.07109 C117.335165,93.7561039 111.929627,96 106,96 C93.2974508,96 83,85.7025492 83,73 C83,60.2974508 93.2974508,50 106,50 L106,50 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                </g>
+                <g id="Group-14" transform="translate(0.000000, 81.000000)">
+                    <g id="Rectangle" transform="translate(16.000000, 214.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#70645C" xlink:href="#path-3"></use>
+                        <path d="M0,0 L591,0 L591,22 C591,23.1045695 590.104569,24 589,24 L2,24 C0.8954305,24 1.3527075e-16,23.1045695 0,22 L0,0 L0,0 Z" fill-opacity="0.32" fill="#000000" mask="url(#mask-4)"></path>
+                    </g>
+                    <g id="Group-12" transform="translate(29.000000, 214.000000)">
+                        <rect id="Rectangle" fill="#887C74" x="0" y="0" width="20" height="12"></rect>
+                        <rect id="Rectangle" fill-opacity="0.1" fill="#000000" x="0" y="0" width="20" height="12"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="#70645C" x="0" y="194" width="620" height="20" rx="2"></rect>
+                    <g id="Drawer" transform="translate(0.000000, 226.000000)">
+                        <g id="Group-11">
+                            <rect id="Mask" fill="#70645C" x="0" y="0" width="169" height="151" rx="2"></rect>
+                            <rect id="Rectangle" fill="#28201A" x="70" y="37" width="30" height="4" rx="2"></rect>
+                            <rect id="Rectangle" fill="#28201A" x="70" y="112" width="30" height="4" rx="2"></rect>
+                        </g>
+                        <rect id="Rectangle" fill-opacity="0.25" fill="#000000" x="0" y="75" width="169" height="4"></rect>
+                        <path d="M20,151 L33,151 L33,163 C33,164.104569 32.1045695,165 31,165 L22,165 C20.8954305,165 20,164.104569 20,163 L20,151 L20,151 Z" id="Rectangle" fill="#70645C"></path>
+                        <path d="M136,151 L149,151 L149,163 C149,164.104569 148.104569,165 147,165 L138,165 C136.895431,165 136,164.104569 136,163 L136,151 L136,151 Z" id="Rectangle" fill="#70645C"></path>
+                        <path d="M20,151 L33,151 L33,163 C33,164.104569 32.1045695,165 31,165 L22,165 C20.8954305,165 20,164.104569 20,163 L20,151 L20,151 Z" id="Rectangle" fill-opacity="0.15" fill="#000000"></path>
+                        <path d="M136,151 L149,151 L149,163 C149,164.104569 148.104569,165 147,165 L138,165 C136.895431,165 136,164.104569 136,163 L136,151 L136,151 Z" id="Rectangle" fill-opacity="0.15" fill="#000000"></path>
+                    </g>
+                    <g id="Rectangle" transform="translate(571.000000, 214.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="Mask" fill="#70645C" xlink:href="#path-5"></use>
+                        <rect fill-opacity="0.15" fill="#000000" mask="url(#mask-6)" x="0" y="0" width="20" height="8"></rect>
+                    </g>
+                    <g id="Lamp" transform="translate(62.500000, 134.500000) scale(-1, 1) translate(-62.500000, -134.500000) translate(18.000000, 73.000000)">
+                        <rect id="Rectangle" fill="#BFBFBF" transform="translate(63.267949, 84.516660) rotate(30.000000) translate(-63.267949, -84.516660) " x="61.2679492" y="58.5166605" width="4" height="52"></rect>
+                        <rect id="Rectangle" fill="#BFBFBF" transform="translate(70.517949, 85.083648) rotate(30.000000) translate(-70.517949, -85.083648) " x="68.5179492" y="59.5836478" width="4" height="51"></rect>
+                        <rect id="Rectangle" fill="#BFBFBF" transform="translate(54.329358, 41.958992) rotate(-50.000000) translate(-54.329358, -41.958992) " x="52.3293581" y="17.9589915" width="4" height="48"></rect>
+                        <rect id="Rectangle" fill="#BFBFBF" transform="translate(60.797269, 37.244567) rotate(-50.000000) translate(-60.797269, -37.244567) " x="58.7972693" y="11.2445667" width="4" height="52"></rect>
+                        <g id="Rectangle" transform="translate(29.106969, 104.084889)">
+                            <g id="Rectangle-+-Rectangle-Mask" transform="translate(0.000000, 0.915111)">
+                                <mask id="mask-8" fill="white">
+                                    <use xlink:href="#path-7"></use>
+                                </mask>
+                                <use id="Mask" fill="#9246AA" xlink:href="#path-7"></use>
+                                <rect id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-8)" x="14.893031" y="0" width="4" height="16"></rect>
+                                <rect id="Rectangle" fill-opacity="0.1" fill="#000000" mask="url(#mask-8)" x="39.893031" y="2" width="10" height="16"></rect>
+                            </g>
+                        </g>
+                        <circle id="Oval" fill="#9246AA" cx="79.606969" cy="58.5848889" r="8.5"></circle>
+                        <g id="Group-13" transform="translate(29.612664, 29.721982) rotate(-50.000000) translate(-29.612664, -29.721982) translate(11.112664, 6.721982)">
+                            <rect id="Rectangle" fill="#FDF4C6" x="0.554467082" y="14.5334761" width="15" height="15" rx="7.5"></rect>
+                            <g id="Rectangle" transform="translate(5.000000, 0.567907)">
+                                <g id="Rectangle-+-Rectangle-Mask" transform="translate(0.958911, 0.168677)">
+                                    <mask id="mask-10" fill="white">
+                                        <use xlink:href="#path-9"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#9246AA" xlink:href="#path-9"></use>
+                                    <rect id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-10)" x="-3" y="5.23765719" width="27" height="4"></rect>
+                                    <rect id="Rectangle" fill-opacity="0.1" fill="#000000" mask="url(#mask-10)" x="-2.38795777" y="33.9700896" width="27" height="10"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Computer" transform="translate(191.000000, 0.000000)">
+                        <g id="Stand" transform="translate(98.000000, 156.000000)">
+                            <g id="Rectangle">
+                                <mask id="mask-12" fill="white">
+                                    <use xlink:href="#path-11"></use>
+                                </mask>
+                                <use id="Mask" fill="#4E5156" xlink:href="#path-11"></use>
+                                <rect fill-opacity="0.15" fill="#000000" mask="url(#mask-12)" x="0" y="30" width="100" height="8"></rect>
+                                <rect fill-opacity="0.15" fill="#000000" mask="url(#mask-12)" x="34" y="0" width="33" height="4"></rect>
+                            </g>
+                        </g>
+                        <g id="Group-10" transform="translate(15.000000, 0.000000)">
+                            <mask id="mask-14" fill="white">
+                                <use xlink:href="#path-13"></use>
+                            </mask>
+                            <use id="Frame" fill="#4E5156" xlink:href="#path-13"></use>
+                        </g>
+                        <g id="Screen" transform="translate(19.000000, 4.000000)">
+                            <mask id="mask-16" fill="white">
+                                <use xlink:href="#path-15"></use>
+                            </mask>
+                            <use id="Mask" fill="#151515" xlink:href="#path-15"></use>
+                            <rect id="Rectangle" fill="#252527" mask="url(#mask-16)" x="-2" y="-2" width="72" height="152"></rect>
+                            <rect id="Rectangle" fill="#333333" mask="url(#mask-16)" x="-2" y="-2" width="12" height="152"></rect>
+                        </g>
+                        <rect id="Rectangle" fill="#D8D8D8" x="153" y="133" width="1" height="6"></rect>
+                        <g id="Group-9" transform="translate(29.000000, 12.000000)">
+                            <g id="Group" transform="translate(70.000000, 47.000000)">
+                                <g id="Group-2">
+                                    <rect id="Rectangle" fill="#A8A048" x="0" y="0" width="28" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#1F87D1" x="32" y="0" width="12" height="4" rx="2"></rect>
+                                </g>
+                                <g id="Group-2" transform="translate(4.000000, 7.000000)">
+                                    <rect id="Rectangle" fill="#0D5191" x="0" y="0" width="12" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#1F87D1" x="16" y="0" width="24" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#1F87D1" x="54" y="0" width="18" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#A8A048" x="76" y="0" width="18" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#C0C1C2" x="44" y="0" width="6" height="4" rx="2"></rect>
+                                </g>
+                            </g>
+                            <g id="Group-5" transform="translate(74.000000, 90.000000)">
+                                <g id="Group-2" transform="translate(0.000000, 7.000000)">
+                                    <rect id="Rectangle" fill="#1F87D1" x="0" y="0" width="34" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#A8A048" x="38" y="0" width="22" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#1F87D1" x="64" y="0" width="24" height="4" rx="2"></rect>
+                                </g>
+                                <g id="Group-2">
+                                    <rect id="Rectangle" fill="#0D5191" x="0" y="0" width="12" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#1F87D1" x="16" y="0" width="24" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#C0C1C2" x="44" y="0" width="6" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#AA7046" x="54" y="0" width="20" height="4" rx="2"></rect>
+                                </g>
+                                <g id="Group-2" transform="translate(0.000000, 14.000000)">
+                                    <rect id="Rectangle" fill="#9246AA" x="0" y="0" width="20" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#1F87D1" x="24" y="0" width="24" height="4" rx="2"></rect>
+                                </g>
+                            </g>
+                            <g id="Group-4" transform="translate(74.000000, 65.000000)">
+                                <g id="Group-2" transform="translate(4.000000, 7.000000)">
+                                    <rect id="Rectangle" fill="#A8A048" x="24" y="0" width="28" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#AA7046" x="56" y="0" width="40" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#1F87D1" x="0" y="0" width="20" height="4" rx="2"></rect>
+                                </g>
+                                <g id="Group-2">
+                                    <rect id="Rectangle" fill="#9246AA" x="0" y="0" width="8" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#1F87D1" x="12" y="0" width="24" height="4" rx="2"></rect>
+                                </g>
+                                <g id="Group-2" transform="translate(4.000000, 14.000000)">
+                                    <rect id="Rectangle" fill="#9246AA" x="0" y="0" width="20" height="4" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#0D5191" x="24" y="0" width="12" height="4" rx="2"></rect>
+                                </g>
+                            </g>
+                            <g id="Group-3" transform="translate(66.000000, 7.000000)">
+                                <rect id="Rectangle" fill="#9246AA" x="0" y="0" width="20" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#9246AA" x="58" y="0" width="10" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#AA7046" x="72" y="0" width="24" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#1F87D1" x="24" y="0" width="30" height="4" rx="2"></rect>
+                            </g>
+                            <g id="Group-3" transform="translate(66.000000, 0.000000)">
+                                <rect id="Rectangle" fill="#9246AA" x="0" y="0" width="20" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#AA7046" x="24" y="0" width="16" height="4" rx="2"></rect>
+                            </g>
+                            <g id="Group-6">
+                                <g id="Group-3" transform="translate(6.000000, 0.000000)" fill="#C0C1C2">
+                                    <rect id="Rectangle" x="0" y="0" width="28" height="4" rx="2"></rect>
+                                </g>
+                                <g id="Group-3" transform="translate(9.000000, 7.000000)" fill="#AA7046">
+                                    <rect id="Rectangle" x="0" y="0" width="20" height="4" rx="2"></rect>
+                                </g>
+                                <g id="Group-3" transform="translate(9.000000, 42.000000)" fill="#C0C1C2">
+                                    <rect id="Rectangle" x="0" y="0" width="26" height="4" rx="2"></rect>
+                                </g>
+                                <g id="Group-7" transform="translate(0.000000, 14.000000)">
+                                    <g id="Group-3" transform="translate(13.000000, 0.000000)">
+                                        <rect id="Rectangle" fill="#1F87D1" x="0" y="0" width="6" height="4" rx="2"></rect>
+                                        <rect id="Rectangle" fill="#C0C1C2" x="9" y="0" width="20" height="4" rx="2"></rect>
+                                    </g>
+                                    <g id="Group-3" transform="translate(0.000000, 6.000000)">
+                                        <rect id="Rectangle" fill-opacity="0.4" fill="#1369AE" x="0" y="0" width="60" height="6"></rect>
+                                        <rect id="Rectangle" fill="#0D5191" x="13" y="1" width="6" height="4" rx="2"></rect>
+                                        <rect id="Rectangle" fill="#C0C1C2" x="22" y="1" width="26" height="4" rx="2"></rect>
+                                    </g>
+                                    <g id="Group-3" transform="translate(13.000000, 14.000000)">
+                                        <rect id="Rectangle" fill="#0D5191" x="0" y="0" width="6" height="4" rx="2"></rect>
+                                        <rect id="Rectangle" fill="#AA7046" x="9" y="0" width="20" height="4" rx="2"></rect>
+                                    </g>
+                                    <g id="Group-3" transform="translate(13.000000, 21.000000)">
+                                        <rect id="Rectangle" fill="#A8A048" x="0" y="0" width="6" height="4" rx="2"></rect>
+                                        <rect id="Rectangle" fill="#C0C1C2" x="9" y="0" width="16" height="4" rx="2"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="Group-3" transform="translate(66.000000, 14.000000)">
+                                <rect id="Rectangle" fill="#9246AA" x="0" y="0" width="20" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#9246AA" x="48" y="0" width="10" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#AA7046" x="62" y="0" width="28" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#1F87D1" x="24" y="0" width="20" height="4" rx="2"></rect>
+                            </g>
+                            <g id="Group-3" transform="translate(66.000000, 33.000000)">
+                                <rect id="Rectangle" fill="#9246AA" x="0" y="0" width="22" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#46AA7D" x="42" y="0" width="40" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#46AA7D" x="106" y="0" width="22" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#0D5191" x="26" y="0" width="12" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#0D5191" x="86" y="0" width="16" height="4" rx="2"></rect>
+                            </g>
+                            <g id="Group-3" transform="translate(66.000000, 122.000000)">
+                                <rect id="Rectangle" fill="#9246AA" x="0" y="0" width="22" height="4" rx="2"></rect>
+                                <rect id="Rectangle" fill="#A8A048" x="26" y="0" width="28" height="4" rx="2"></rect>
+                            </g>
+                        </g>
+                        <g id="Group-8" transform="translate(22.000000, 12.000000)" fill="#C0C1C2">
+                            <rect id="Rectangle" x="0" y="0" width="4" height="4" rx="2"></rect>
+                            <rect id="Rectangle" x="0" y="20" width="4" height="4" rx="2"></rect>
+                            <rect id="Rectangle" x="0" y="30" width="4" height="4" rx="2"></rect>
+                            <rect id="Rectangle" x="0" y="10" width="4" height="4" rx="2"></rect>
+                        </g>
+                        <rect id="Rectangle" fill="#C0C1C2" x="22" y="144" width="4" height="4" rx="2"></rect>
+                        <g id="Rectangle" transform="translate(0.000000, 68.000000)" fill="#FFFFFF" fill-opacity="0.15">
+                            <g id="Rectangle-+-Rectangle-Mask">
+                                <polygon id="Rectangle" transform="translate(39.249990, 63.750010) rotate(-45.000000) translate(-39.249990, -63.750010) " points="52.3314795 22.0307097 52.3314795 105.46931 26.168501 79.3063589 26.168501 48.1936606"></polygon>
+                                <polygon id="Rectangle" transform="translate(56.750000, 46.250000) rotate(-45.000000) translate(-56.750000, -46.250000) " points="62.7604076 -13.1469696 62.7604076 105.64697 50.7395924 93.6261543 50.7395924 -1.12615434"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="CoffeeMug" transform="translate(547.000000, 158.000000)">
+                        <path d="M30,28.5 C35.5228475,28.5 38.5,21.5228475 38.5,16 C38.5,10.4771525 35.5228475,6 30,6 C24.4771525,6 20,10.4771525 20,16 C20,21.5228475 24.4771525,28.5 30,28.5 Z" id="Oval" stroke="#98643E" stroke-width="3"></path>
+                        <g id="Rectangle">
+                            <mask id="mask-18" fill="white">
+                                <use xlink:href="#path-17"></use>
+                            </mask>
+                            <use id="Mask" fill="#AA7046" xlink:href="#path-17"></use>
+                            <rect fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-18)" x="6" y="0" width="4" height="36"></rect>
+                            <rect fill-opacity="0.1" fill="#000000" mask="url(#mask-18)" x="23" y="0" width="7" height="36"></rect>
+                        </g>
+                    </g>
+                    <g id="Group-18" transform="translate(551.000000, 118.000000)" fill="#FFFFFF" fill-opacity="0.1">
+                        <path d="M12.7729616,15 C17.6594424,18.5 18.6367385,24 17.6594424,27.5 C16.9002059,30.2190609 14.2940828,34.0523942 9.8410731,39 C12.0799556,36.6156688 12.9004605,33.2823355 12.3025876,29 C12.000387,26.8354519 2.52962606,16 3.01827414,10.5 C3.34403952,6.83333333 5.61830584,3.33333333 9.8410731,0 C8.53801156,7.66666667 9.51530772,12.6666667 12.7729616,15 Z" id="Rectangle"></path>
+                        <path d="M4.5607154,28.5384615 C6.8410731,30.0641026 7.29714464,32.4615385 6.8410731,33.9871795 C6.48676274,35.1724112 5.27057196,36.8433513 3.19250078,39 C4.23731264,37.9606762 4.6202149,36.5076847 4.34120756,34.6410256 C4.20018059,33.6975047 -0.21950784,28.974359 0.00852793052,26.5769231 C0.160551777,24.9786325 1.22187606,23.4529915 3.19250078,22 C2.58440539,25.3418803 3.04047693,27.5213675 4.5607154,28.5384615 Z" id="Rectangle"></path>
+                        <path d="M17.2576539,5.61538462 C18.8864808,6.69230769 19.2122462,8.38461538 18.8864808,9.46153846 C18.633402,10.2981726 17.7646943,11.4776598 16.2803577,13 C17.0266519,12.2663596 17.3001535,11.2407186 17.1008625,9.92307692 C17.000129,9.25706212 13.8432087,5.92307692 14.0060914,4.23076923 C14.1146798,3.1025641 14.8727686,2.02564103 16.2803577,1 C15.8460039,3.35897436 16.1717692,4.8974359 17.2576539,5.61538462 Z" id="Rectangle"></path>
+                    </g>
+                </g>
+                <g id="Rectangle" transform="translate(229.000000, 267.000000)">
+                    <mask id="mask-20" fill="white">
+                        <use xlink:href="#path-19"></use>
+                    </mask>
+                    <use id="Mask" fill="#4A4A4A" xlink:href="#path-19"></use>
+                </g>
+                <g id="Group-15" transform="translate(100.288545, 260.297167)">
+                    <path d="M7.5,0 L97,0 L97,0 L97,15 L7.5,15 C3.35786438,15 5.07265313e-16,11.6421356 0,7.5 C-5.07265313e-16,3.35786438 3.35786438,7.6089797e-16 7.5,0 Z" id="Rectangle" fill="#AA7046"></path>
+                    <path d="M7.5,4 L97,4 L97,4 L97,11 L7.5,11 C5.56700338,11 4,9.43299662 4,7.5 C4,5.56700338 5.56700338,4 7.5,4 Z" id="Rectangle" fill="#EBEBEB"></path>
+                </g>
+                <g id="Group-15" transform="translate(88.000000, 246.000000)">
+                    <path d="M7.5,0 L97,0 L97,0 L97,15 L7.5,15 C3.35786438,15 5.07265313e-16,11.6421356 0,7.5 C-5.07265313e-16,3.35786438 3.35786438,7.6089797e-16 7.5,0 Z" id="Rectangle" fill="#AA4646"></path>
+                    <path d="M7.5,4 L97,4 L97,4 L97,11 L7.5,11 C5.56700338,11 4,9.43299662 4,7.5 C4,5.56700338 5.56700338,4 7.5,4 Z" id="Rectangle" fill="#EBEBEB"></path>
+                </g>
+                <g id="Rectangle" transform="translate(488.000000, 264.000000)">
+                    <mask id="mask-22" fill="white">
+                        <use xlink:href="#path-21"></use>
+                    </mask>
+                    <use id="Mask" fill="#4A4A4A" xlink:href="#path-21"></use>
+                    <rect fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-22)" x="6" y="0" width="3" height="11"></rect>
+                    <rect fill-opacity="0.1" fill="#000000" mask="url(#mask-22)" x="21" y="0" width="5" height="11"></rect>
+                </g>
+                <polygon id="Rectangle" fill-opacity="0.3" fill="#FDF5CB" points="75.5 201.318681 95 185 275 275 75 275"></polygon>
+                <rect id="Rectangle" fill-opacity="0.5" fill="#000000" x="0" y="472" width="234" height="2" rx="1"></rect>
+                <rect id="Rectangle" fill-opacity="0.5" fill="#000000" x="242" y="472" width="20" height="2" rx="1"></rect>
+                <rect id="Rectangle" fill-opacity="0.5" fill="#000000" x="288" y="472" width="180" height="2" rx="1"></rect>
+                <rect id="Rectangle" fill-opacity="0.5" fill="#000000" x="458" y="472" width="40" height="2" rx="1"></rect>
+                <rect id="Rectangle" fill-opacity="0.5" fill="#000000" transform="translate(563.000000, 473.000000) scale(1, -1) translate(-563.000000, -473.000000) " x="506" y="472" width="114" height="2" rx="1"></rect>
+                <rect id="Rectangle" fill-opacity="0.5" fill="#000000" x="270" y="472" width="10" height="2" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

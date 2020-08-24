@@ -1,15 +1,17 @@
 <template>
-  <v-app >
-    <AppBar  v-bind="appBarProps"/>
+  <div class="container">
+    <AppBar />
     <slot />
-  </v-app>
+  </div>
 </template>
 
 <script>
-  import AppBar from '@/components/AppBar';
+  import AppBar from '@/reusable-components/AppBar';
 
   export default {
-     components: {AppBar},
+    components: {
+      AppBar,
+    },
      computed: {
        appBarProps() {
         return (this.$route.meta && this.$route.meta.appBar) || {};
@@ -19,5 +21,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+  .container {
+    height: 100%;
+  }
 </style>
