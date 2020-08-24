@@ -4,7 +4,7 @@
       <div id="landing-page-content">
         <div id="landing-page-info">
           <div class="landing-page-title">
-            Games and stuff
+            Games and stuff22
           </div>
           <div class="font-weight-light landing-page-subtitle">
             Explore random games made by Miika Luiro
