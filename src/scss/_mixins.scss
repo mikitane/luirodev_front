@@ -1,0 +1,61 @@
+@use 'variables.scss' as vars;
+
+@mixin text-base {
+  font-family: vars.$font-family;
+  color: vars.$text-color;
+}
+
+@mixin text-p {
+  @include text-base;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  line-height: 26px;
+}
+
+// TODO
+// @mixin text-h1 {
+// font-size: 68px;
+// }
+
+// TODO
+// @mixin text-h2 {
+// font-size: 60px;
+// }
+
+
+
+@mixin text-h3 {
+  @include text-base;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+@mixin text-h4 {
+  @include text-base;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+@mixin text-h5 {
+  @include text-base;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+@mixin text-h6 {
+  @include text-base;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+
+@mixin text-nav {
+  @include text-base;
+  font-size: 18px;
+  text-decoration: none;
+}
+

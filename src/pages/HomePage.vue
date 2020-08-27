@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import Button from "@/reusable-components/Button";
+import Button from "@/lib/Button";
 
 export default {
   components: {

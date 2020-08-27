@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import AppBar from '@/reusable-components/AppBar';
+  import AppBar from '@/lib/AppBar';
 
   export default {
     components: {

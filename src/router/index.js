@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router';
-import HomePage from '@/pages/HomePage';
+import HomePage from '@/pages/HomePage2';
 import GamePage from '@/pages/GamePage';
 
 

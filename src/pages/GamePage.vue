@@ -2,18 +2,12 @@
   <v-content class="content">
     <div class="main-column">
       <div :class="'title'">Snake Game</div>
-      <SnakeGame :style="{marginTop: '4px'}"/>
     </div>
   </v-content>
 </template>
 
 <script>
-  import SnakeGame from '@/modules/SnakeGame';
-  export default {
-    components: {
-      SnakeGame
-    },
-  }
+
 </script>
 
 <style lang="scss" scoped>
