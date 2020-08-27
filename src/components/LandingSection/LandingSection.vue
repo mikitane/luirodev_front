@@ -1,28 +1,32 @@
 <template>
-  <div :class="$style.landingPage">
-    <div :class="$style.mainHeader">Games and Stuff</div>
+  <ResponsiveWrapper>
+    <div :class="$style.landingPage">
+      <div :class="$style.mainHeader">Games and Stuff</div>
 
-    <p>
-      Explore random games made by Miika Luiro.
-      Liirum laarum epsum es. Loorum epsum ipsum
-      aarem os.
-    </p>
-    <Button
-      size="large"
-      @onClick="handleExploreGamesButtonClick"
-      :class="$style.exploreGamesButton"
-    >Explore games</Button>
+      <p>
+        Explore random games made by Miika Luiro.
+        Liirum laarum epsum es. Loorum epsum ipsum
+        aarem os.
+      </p>
+      <Button
+        size="large"
+        @onClick="handleExploreGamesButtonClick"
+        :class="$style.exploreGamesButton"
+      >Explore games</Button>
 
-    <img src="@/assets/ComputerTable.svg" :class="$style.landingPageIllustration" />
-  </div>
+      <img src="@/assets/ComputerTable.svg" :class="$style.landingPageIllustration" />
+    </div>
+  </ResponsiveWrapper>
 </template>
 
 <script>
 import Button from "@/lib/Button.vue";
+import ResponsiveWrapper from "@/lib/ResponsiveWrapper";
 
 export default {
   components: {
     Button,
+    ResponsiveWrapper,
   },
   methods: {
     handleExploreGamesButtonClick() {
@@ -34,7 +38,7 @@ export default {
 
 <style lang="scss" module>
 .landingPage {
-  padding-top: 42px;
+  padding-top: 60px;
 }
 
 .mainHeader {
@@ -43,10 +47,10 @@ export default {
 }
 
 .exploreGamesButton {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .landingPageIllustration {
-  margin: 80px 0 0 0;
+  margin: 120px 20px 60px 20px;
 }
 </style>

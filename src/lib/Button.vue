@@ -34,6 +34,7 @@ export default {
   border-radius: 1000px; // Workaround for pill shaped button
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  user-select: none;
 }
 
 .textButton {
