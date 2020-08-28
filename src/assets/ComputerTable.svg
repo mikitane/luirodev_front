@@ -5,14 +5,16 @@
         <rect id="path-1" x="0" y="0" width="271" height="235"></rect>
         <path d="M0,0 L591,0 L591,22 C591,23.1045695 590.104569,24 589,24 L2,24 C0.8954305,24 1.3527075e-16,23.1045695 0,22 L0,0 L0,0 Z" id="path-3"></path>
         <path d="M0,0 L20,0 L20,175 C20,176.104569 19.1045695,177 18,177 L2,177 C0.8954305,177 1.3527075e-16,176.104569 0,175 L0,0 L0,0 Z" id="path-5"></path>
-        <path d="M19,0.0848888922 L32,0.0848888922 C35.2383969,0.0848888922 37.8775718,2.65046378 37.9958615,5.85995063 L38,6.08488889 L42,6.08488889 C46.418278,6.08488889 50,9.66661089 50,14.0848889 L50,16.0848889 L0,16.0848889 L0,14.0848889 C-5.41083001e-16,9.66661089 3.581722,6.08488889 8,6.08488889 L13,6.08488889 C13,2.77118039 15.6862915,0.0848888922 19,0.0848888922 Z" id="path-7"></path>
-        <path d="M4.13212023,0 C13.7427193,-1.76543842e-15 21.9139991,6.1624588 24.9100573,14.7514742 C28.1135995,14.87478 30.6732651,17.5116034 30.6732651,20.7462687 L30.6732651,23.7462687 C30.6732651,26.9846656 28.1076902,29.6238405 24.8982034,29.7421302 L24.7297194,29.7460418 C21.5961528,38.0745161 13.556122,44 4.13212023,44 L0.853535884,44 C0.455109018,44 0.132120227,43.6770112 0.132120227,43.2785843 L0.132120227,1.02029736 C0.132120227,0.494369 0.530046124,0.0613812117 1.04124495,0.00598696601 L1.15241759,0 L4.13212023,0 Z" id="path-9"></path>
-        <path d="M34,0 L66,0 L66,30 L96,30 C98.209139,30 100,31.790861 100,34 L100,38 L0,38 L0,34 C-2.705415e-16,31.790861 1.790861,30 4,30 L34,30 L34,0 Z" id="path-11"></path>
-        <rect id="path-13" x="0" y="0" width="268" height="156" rx="4"></rect>
-        <rect id="path-15" x="0" y="0" width="260" height="148" rx="2"></rect>
-        <path d="M0,0 L30,0 L30,30 C30,33.3137085 27.3137085,36 24,36 L6,36 C2.6862915,36 4.05812251e-16,33.3137085 0,30 L0,0 L0,0 Z" id="path-17"></path>
-        <rect id="path-19" x="0" y="0" width="220" height="8" rx="2"></rect>
-        <path d="M11,0 L15,0 C21.0751322,-1.11598369e-15 26,4.92486775 26,11 L26,11 L26,11 L0,11 C-7.43989126e-16,4.92486775 4.92486775,1.11598369e-15 11,0 Z" id="path-21"></path>
+        <path d="M0,0 L20,0 L20,175 C20,176.104569 19.1045695,177 18,177 L2,177 C0.8954305,177 1.3527075e-16,176.104569 0,175 L0,0 L0,0 Z" id="path-7"></path>
+        <path d="M19,0.0848888922 L32,0.0848888922 C35.2383969,0.0848888922 37.8775718,2.65046378 37.9958615,5.85995063 L38,6.08488889 L42,6.08488889 C46.418278,6.08488889 50,9.66661089 50,14.0848889 L50,16.0848889 L0,16.0848889 L0,14.0848889 C-5.41083001e-16,9.66661089 3.581722,6.08488889 8,6.08488889 L13,6.08488889 C13,2.77118039 15.6862915,0.0848888922 19,0.0848888922 Z" id="path-9"></path>
+        <path d="M4.13212023,0 C13.7427193,-1.76543842e-15 21.9139991,6.1624588 24.9100573,14.7514742 C28.1135995,14.87478 30.6732651,17.5116034 30.6732651,20.7462687 L30.6732651,23.7462687 C30.6732651,26.9846656 28.1076902,29.6238405 24.8982034,29.7421302 L24.7297194,29.7460418 C21.5961528,38.0745161 13.556122,44 4.13212023,44 L0.853535884,44 C0.455109018,44 0.132120227,43.6770112 0.132120227,43.2785843 L0.132120227,1.02029736 C0.132120227,0.494369 0.530046124,0.0613812117 1.04124495,0.00598696601 L1.15241759,0 L4.13212023,0 Z" id="path-11"></path>
+        <path d="M34,0 L66,0 L66,30 L96,30 C98.209139,30 100,31.790861 100,34 L100,38 L0,38 L0,34 C-2.705415e-16,31.790861 1.790861,30 4,30 L34,30 L34,0 Z" id="path-13"></path>
+        <rect id="path-15" x="0" y="0" width="268" height="156" rx="4"></rect>
+        <rect id="path-17" x="4" y="4" width="260" height="148" rx="2"></rect>
+        <rect id="path-19" x="0" y="0" width="260" height="148" rx="2"></rect>
+        <path d="M0,0 L30,0 L30,30 C30,33.3137085 27.3137085,36 24,36 L6,36 C2.6862915,36 4.05812251e-16,33.3137085 0,30 L0,0 L0,0 Z" id="path-21"></path>
+        <rect id="path-23" x="0" y="0" width="220" height="8" rx="2"></rect>
+        <path d="M11,0 L15,0 C21.0751322,-1.11598369e-15 26,4.92486775 26,11 L26,11 L26,11 L0,11 C-7.43989126e-16,4.92486775 4.92486775,1.11598369e-15 11,0 Z" id="path-25"></path>
     </defs>
     <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(-3090.000000, -996.000000)">
@@ -58,29 +60,20 @@
                         <use id="Mask" fill="#494F55" xlink:href="#path-3"></use>
                         <path d="M0,0 L591,0 L591,22 C591,23.1045695 590.104569,24 589,24 L2,24 C0.8954305,24 1.3527075e-16,23.1045695 0,22 L0,0 L0,0 Z" fill-opacity="0.32" fill="#000000" mask="url(#mask-4)"></path>
                     </g>
-                    <g id="Group-12" transform="translate(29.000000, 214.000000)">
-                        <rect id="Rectangle" fill="#494F55" x="0" y="0" width="20" height="12"></rect>
-                        <rect id="Rectangle" fill-opacity="0.1" fill="#000000" x="0" y="0" width="20" height="12"></rect>
-                    </g>
                     <rect id="Rectangle" fill="#494F55" x="0" y="194" width="620" height="20" rx="2"></rect>
-                    <g id="Drawer" transform="translate(0.000000, 226.000000)">
-                        <g id="Group-11">
-                            <rect id="Mask" fill="#494F55" x="0" y="0" width="169" height="151" rx="2"></rect>
-                            <rect id="Rectangle" fill="#28201A" x="70" y="37" width="30" height="4" rx="2"></rect>
-                            <rect id="Rectangle" fill="#28201A" x="70" y="112" width="30" height="4" rx="2"></rect>
-                        </g>
-                        <rect id="Rectangle" fill-opacity="0.25" fill="#000000" x="0" y="75" width="169" height="4"></rect>
-                        <path d="M20,151 L33,151 L33,163 C33,164.104569 32.1045695,165 31,165 L22,165 C20.8954305,165 20,164.104569 20,163 L20,151 L20,151 Z" id="Rectangle" fill="#494F55"></path>
-                        <path d="M136,151 L149,151 L149,163 C149,164.104569 148.104569,165 147,165 L138,165 C136.895431,165 136,164.104569 136,163 L136,151 L136,151 Z" id="Rectangle" fill="#494F55"></path>
-                        <path d="M20,151 L33,151 L33,163 C33,164.104569 32.1045695,165 31,165 L22,165 C20.8954305,165 20,164.104569 20,163 L20,151 L20,151 Z" id="Rectangle" fill-opacity="0.15" fill="#000000"></path>
-                        <path d="M136,151 L149,151 L149,163 C149,164.104569 148.104569,165 147,165 L138,165 C136.895431,165 136,164.104569 136,163 L136,151 L136,151 Z" id="Rectangle" fill-opacity="0.15" fill="#000000"></path>
-                    </g>
                     <g id="Rectangle" transform="translate(571.000000, 214.000000)">
                         <mask id="mask-6" fill="white">
                             <use xlink:href="#path-5"></use>
                         </mask>
                         <use id="Mask" fill="#494F55" xlink:href="#path-5"></use>
                         <rect fill-opacity="0.15" fill="#000000" mask="url(#mask-6)" x="0" y="0" width="20" height="8"></rect>
+                    </g>
+                    <g id="Rectangle" transform="translate(32.000000, 214.000000)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <use id="Mask" fill="#494F55" xlink:href="#path-7"></use>
+                        <rect fill-opacity="0.15" fill="#000000" mask="url(#mask-8)" x="0" y="0" width="20" height="8"></rect>
                     </g>
                     <g id="Lamp" transform="translate(62.500000, 134.500000) scale(-1, 1) translate(-62.500000, -134.500000) translate(18.000000, 73.000000)">
                         <rect id="Rectangle" fill="#BFBFBF" transform="translate(63.267949, 84.516660) rotate(30.000000) translate(-63.267949, -84.516660) " x="61.2679492" y="58.5166605" width="4" height="52"></rect>
@@ -89,12 +82,12 @@
                         <rect id="Rectangle" fill="#BFBFBF" transform="translate(60.797269, 37.244567) rotate(-50.000000) translate(-60.797269, -37.244567) " x="58.7972693" y="11.2445667" width="4" height="52"></rect>
                         <g id="Rectangle" transform="translate(29.106969, 104.084889)">
                             <g id="Rectangle-+-Rectangle-Mask" transform="translate(0.000000, 0.915111)">
-                                <mask id="mask-8" fill="white">
-                                    <use xlink:href="#path-7"></use>
+                                <mask id="mask-10" fill="white">
+                                    <use xlink:href="#path-9"></use>
                                 </mask>
-                                <use id="Mask" fill="#9246AA" xlink:href="#path-7"></use>
-                                <rect id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-8)" x="14.893031" y="0" width="4" height="16"></rect>
-                                <rect id="Rectangle" fill-opacity="0.1" fill="#000000" mask="url(#mask-8)" x="39.893031" y="2" width="10" height="16"></rect>
+                                <use id="Mask" fill="#9246AA" xlink:href="#path-9"></use>
+                                <rect id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-10)" x="14.893031" y="0" width="4" height="16"></rect>
+                                <rect id="Rectangle" fill-opacity="0.1" fill="#000000" mask="url(#mask-10)" x="39.893031" y="2" width="10" height="16"></rect>
                             </g>
                         </g>
                         <circle id="Oval" fill="#9246AA" cx="79.606969" cy="58.5848889" r="8.5"></circle>
@@ -102,115 +95,121 @@
                             <rect id="Rectangle" fill="#FDF4C6" x="0.554467082" y="14.5334761" width="15" height="15" rx="7.5"></rect>
                             <g id="Rectangle" transform="translate(5.000000, 0.567907)">
                                 <g id="Rectangle-+-Rectangle-Mask" transform="translate(0.958911, 0.168677)">
-                                    <mask id="mask-10" fill="white">
-                                        <use xlink:href="#path-9"></use>
+                                    <mask id="mask-12" fill="white">
+                                        <use xlink:href="#path-11"></use>
                                     </mask>
-                                    <use id="Mask" fill="#9246AA" xlink:href="#path-9"></use>
-                                    <rect id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-10)" x="-3" y="5.23765719" width="27" height="4"></rect>
-                                    <rect id="Rectangle" fill-opacity="0.1" fill="#000000" mask="url(#mask-10)" x="-2.38795777" y="33.9700896" width="27" height="10"></rect>
+                                    <use id="Mask" fill="#9246AA" xlink:href="#path-11"></use>
+                                    <rect id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-12)" x="-3" y="5.23765719" width="27" height="4"></rect>
+                                    <rect id="Rectangle" fill-opacity="0.1" fill="#000000" mask="url(#mask-12)" x="-2.38795777" y="33.9700896" width="27" height="10"></rect>
                                 </g>
                             </g>
                         </g>
                     </g>
-                    <g id="Computer" transform="translate(191.000000, 0.000000)">
-                        <g id="Rectangle" transform="translate(98.000000, 156.000000)">
-                            <mask id="mask-12" fill="white">
-                                <use xlink:href="#path-11"></use>
-                            </mask>
-                            <use id="Mask" fill="#053C70" xlink:href="#path-11"></use>
-                            <rect fill-opacity="0.15" fill="#000000" mask="url(#mask-12)" x="0" y="30" width="100" height="8"></rect>
-                            <rect fill-opacity="0.15" fill="#000000" mask="url(#mask-12)" x="34" y="0" width="33" height="4"></rect>
-                        </g>
-                        <g id="Group-10" transform="translate(15.000000, 0.000000)">
+                    <g id="Computer" transform="translate(206.000000, 0.000000)">
+                        <g id="Rectangle" transform="translate(83.000000, 156.000000)">
                             <mask id="mask-14" fill="white">
                                 <use xlink:href="#path-13"></use>
                             </mask>
-                            <use id="Frame" fill="#053C70" xlink:href="#path-13"></use>
+                            <use id="Mask" fill="#3D3D3D" xlink:href="#path-13"></use>
+                            <rect fill-opacity="0.15" fill="#000000" mask="url(#mask-14)" x="0" y="30" width="100" height="8"></rect>
+                            <rect fill-opacity="0.15" fill="#000000" mask="url(#mask-14)" x="34" y="0" width="33" height="4"></rect>
                         </g>
-                        <g id="Screen" opacity="0.6" transform="translate(19.000000, 4.000000)">
+                        <g id="Group-10">
                             <mask id="mask-16" fill="white">
                                 <use xlink:href="#path-15"></use>
                             </mask>
-                            <use id="Mask" fill="#466DAA" xlink:href="#path-15"></use>
-                            <g id="Group-17" mask="url(#mask-16)">
-                                <g transform="translate(75.000000, 65.000000)" id="Rectangle">
-                                    <rect fill="#59AA46" x="0" y="0" width="40" height="4"></rect>
-                                    <rect fill="#AA6A46" x="0" y="4" width="40" height="8"></rect>
-                                </g>
-                            </g>
-                            <g id="Group-17" mask="url(#mask-16)">
-                                <g transform="translate(11.000000, 77.000000)" id="Rectangle">
-                                    <rect fill="#59AA46" x="0" y="0" width="40" height="4"></rect>
-                                    <rect fill="#AA6A46" x="0" y="4" width="40" height="8"></rect>
-                                </g>
-                            </g>
-                            <g id="Group-17" mask="url(#mask-16)">
-                                <g transform="translate(145.000000, 53.000000)" id="Rectangle">
-                                    <rect fill="#59AA46" x="0" y="0" width="12" height="4"></rect>
-                                    <rect fill="#AA6A46" x="0" y="4" width="12" height="8"></rect>
-                                </g>
-                            </g>
-                            <g id="Group-17" mask="url(#mask-16)">
-                                <g transform="translate(195.000000, 89.000000)" id="Rectangle">
-                                    <rect fill="#59AA46" x="0" y="0" width="65" height="4"></rect>
-                                    <rect fill="#AA6A46" x="0" y="4" width="65" height="8"></rect>
-                                </g>
-                            </g>
-                            <g id="Group-17" mask="url(#mask-16)">
-                                <g transform="translate(0.000000, 113.000000)" id="Rectangle">
-                                    <rect fill="#59AA46" x="0" y="0" width="107" height="4"></rect>
-                                    <rect fill="#AA6A46" x="0" y="4" width="107" height="31"></rect>
-                                </g>
-                            </g>
-                            <g id="Group-17" mask="url(#mask-16)">
-                                <g transform="translate(131.000000, 113.000000)" id="Rectangle">
-                                    <rect fill="#59AA46" x="0" y="0" width="40" height="4"></rect>
-                                    <rect fill="#AA6A46" x="0" y="4" width="40" height="31"></rect>
-                                </g>
-                            </g>
-                            <g id="Group-19" mask="url(#mask-16)">
-                                <g transform="translate(175.000000, 25.000000)" id="Rectangle">
-                                    <rect fill="#AA8046" x="0" y="2" width="6" height="6"></rect>
-                                    <rect fill="#383838" x="4" y="3" width="1" height="1"></rect>
-                                    <rect fill="#383838" x="3" y="6" width="3" height="1"></rect>
-                                    <rect fill="#AA4646" x="0" y="8" width="6" height="8"></rect>
-                                    <rect fill="#383838" x="0" y="16" width="6" height="6"></rect>
-                                    <rect fill="#AA4646" x="0" y="1" width="8" height="1"></rect>
-                                    <rect fill="#AA4646" x="0" y="0" width="6" height="1"></rect>
-                                </g>
-                            </g>
-                            <text id="Level-4" mask="url(#mask-16)" font-family="Montserrat-Bold, Montserrat" font-size="6" font-weight="bold" fill="#DEDEDE">
-                                <tspan x="12.292" y="11">Level</tspan>
-                                <tspan x="28.708" y="11" font-family="Montserrat-Regular, Montserrat" font-weight="normal"></tspan>
-                                <tspan x="18.517" y="19" font-family="Montserrat-Regular, Montserrat" font-weight="normal">4</tspan>
-                            </text>
-                            <text id="Lives-1" mask="url(#mask-16)" font-family="Montserrat-Bold, Montserrat" font-size="6" font-weight="bold" fill="#DEDEDE">
-                                <tspan x="41.55" y="11">Lives</tspan>
-                                <tspan x="57.45" y="11" font-family="Montserrat-Regular, Montserrat" font-weight="normal"></tspan>
-                                <tspan x="48.417" y="19" font-family="Montserrat-Regular, Montserrat" font-weight="normal">1</tspan>
-                            </text>
-                            <text id="Time-12:45" mask="url(#mask-16)" font-family="Montserrat-Bold, Montserrat" font-size="6" font-weight="bold" fill="#DEDEDE">
-                                <tspan x="232.221" y="11">Time</tspan>
-                                <tspan x="247.779" y="11" font-family="Montserrat-Regular, Montserrat" font-weight="normal"></tspan>
-                                <tspan x="232.908" y="19" font-family="Montserrat-Regular, Montserrat" font-weight="normal">12:45</tspan>
-                            </text>
+                            <use id="Frame" fill="#3D3D3D" xlink:href="#path-15"></use>
                         </g>
-                        <g id="Rectangle" transform="translate(0.000000, 68.000000)" fill="#FFFFFF" fill-opacity="0.15">
-                            <g id="Rectangle-+-Rectangle-Mask">
-                                <polygon id="Rectangle" transform="translate(39.249990, 63.750010) rotate(-45.000000) translate(-39.249990, -63.750010) " points="52.3314795 22.0307097 52.3314795 105.46931 26.168501 79.3063589 26.168501 48.1936606"></polygon>
-                                <polygon id="Rectangle" transform="translate(56.750000, 46.250000) rotate(-45.000000) translate(-56.750000, -46.250000) " points="62.7604076 -13.1469696 62.7604076 105.64697 50.7395924 93.6261543 50.7395924 -1.12615434"></polygon>
+                        <mask id="mask-18" fill="white">
+                            <use xlink:href="#path-17"></use>
+                        </mask>
+                        <use id="Mask" fill="#466DAA" xlink:href="#path-17"></use>
+                        <g id="Screen" opacity="0.7" mask="url(#mask-18)">
+                            <g transform="translate(4.000000, 4.000000)">
+                                <mask id="mask-20" fill="white">
+                                    <use xlink:href="#path-19"></use>
+                                </mask>
+                                <use id="Mask" stroke="none" fill="#466DAA" fill-rule="evenodd" xlink:href="#path-19"></use>
+                                <g id="Group-17" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-20)">
+                                    <g transform="translate(75.000000, 65.000000)" id="Rectangle">
+                                        <rect fill="#59AA46" x="0" y="0" width="40" height="4"></rect>
+                                        <rect fill="#AA6A46" x="0" y="4" width="40" height="8"></rect>
+                                    </g>
+                                </g>
+                                <g id="Group-17" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-20)">
+                                    <g transform="translate(11.000000, 77.000000)" id="Rectangle">
+                                        <rect fill="#59AA46" x="0" y="0" width="40" height="4"></rect>
+                                        <rect fill="#AA6A46" x="0" y="4" width="40" height="8"></rect>
+                                    </g>
+                                </g>
+                                <g id="Group-17" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-20)">
+                                    <g transform="translate(145.000000, 53.000000)" id="Rectangle">
+                                        <rect fill="#59AA46" x="0" y="0" width="12" height="4"></rect>
+                                        <rect fill="#AA6A46" x="0" y="4" width="12" height="8"></rect>
+                                    </g>
+                                </g>
+                                <g id="Group-17" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-20)">
+                                    <g transform="translate(195.000000, 89.000000)" id="Rectangle">
+                                        <rect fill="#59AA46" x="0" y="0" width="65" height="4"></rect>
+                                        <rect fill="#AA6A46" x="0" y="4" width="65" height="8"></rect>
+                                    </g>
+                                </g>
+                                <g id="Group-17" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-20)">
+                                    <g transform="translate(0.000000, 113.000000)" id="Rectangle">
+                                        <rect fill="#59AA46" x="0" y="0" width="107" height="4"></rect>
+                                        <rect fill="#AA6A46" x="0" y="4" width="107" height="31"></rect>
+                                    </g>
+                                </g>
+                                <g id="Group-17" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-20)">
+                                    <g transform="translate(131.000000, 113.000000)" id="Rectangle">
+                                        <rect fill="#59AA46" x="0" y="0" width="40" height="4"></rect>
+                                        <rect fill="#AA6A46" x="0" y="4" width="40" height="31"></rect>
+                                    </g>
+                                </g>
+                                <g id="Group-19" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-20)">
+                                    <g transform="translate(175.000000, 25.000000)" id="Rectangle">
+                                        <rect fill="#AA8046" x="0" y="2" width="6" height="6"></rect>
+                                        <rect fill="#383838" x="4" y="3" width="1" height="1"></rect>
+                                        <rect fill="#383838" x="3" y="6" width="3" height="1"></rect>
+                                        <rect fill="#AA4646" x="0" y="8" width="6" height="8"></rect>
+                                        <rect fill="#383838" x="0" y="16" width="6" height="6"></rect>
+                                        <rect fill="#AA4646" x="0" y="1" width="8" height="1"></rect>
+                                        <rect fill="#AA4646" x="0" y="0" width="6" height="1"></rect>
+                                    </g>
+                                </g>
+                                <text id="Level-4" stroke="none" fill="none" mask="url(#mask-20)" font-family="Montserrat-Bold, Montserrat" font-size="6" font-weight="bold">
+                                    <tspan x="12.292" y="11" fill="#DEDEDE">Level</tspan>
+                                    <tspan x="28.708" y="11" font-family="Montserrat-Regular, Montserrat" font-weight="normal" fill="#DEDEDE"></tspan>
+                                    <tspan x="18.517" y="19" font-family="Montserrat-Regular, Montserrat" font-weight="normal" fill="#DEDEDE">4</tspan>
+                                </text>
+                                <text id="Lives-1" stroke="none" fill="none" mask="url(#mask-20)" font-family="Montserrat-Bold, Montserrat" font-size="6" font-weight="bold">
+                                    <tspan x="41.55" y="11" fill="#DEDEDE">Lives</tspan>
+                                    <tspan x="57.45" y="11" font-family="Montserrat-Regular, Montserrat" font-weight="normal" fill="#DEDEDE"></tspan>
+                                    <tspan x="48.417" y="19" font-family="Montserrat-Regular, Montserrat" font-weight="normal" fill="#DEDEDE">1</tspan>
+                                </text>
+                                <text id="Time-12:45" stroke="none" fill="none" mask="url(#mask-20)" font-family="Montserrat-Bold, Montserrat" font-size="6" font-weight="bold">
+                                    <tspan x="232.221" y="11" fill="#DEDEDE">Time</tspan>
+                                    <tspan x="247.779" y="11" font-family="Montserrat-Regular, Montserrat" font-weight="normal" fill="#DEDEDE"></tspan>
+                                    <tspan x="232.908" y="19" font-family="Montserrat-Regular, Montserrat" font-weight="normal" fill="#DEDEDE">12:45</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Rectangle" mask="url(#mask-18)" fill-opacity="0.15">
+                            <g transform="translate(-15.000000, 68.000000)" id="Rectangle-+-Rectangle-Mask">
+                                <polygon id="Rectangle" fill="#FFFFFF" transform="translate(39.249990, 63.750010) rotate(-45.000000) translate(-39.249990, -63.750010) " points="52.3314795 22.0307097 52.3314795 105.46931 26.168501 79.3063589 26.168501 48.1936606"></polygon>
+                                <polygon id="Rectangle" fill="#FFFFFF" transform="translate(56.750000, 46.250000) rotate(-45.000000) translate(-56.750000, -46.250000) " points="62.7604076 -13.1469696 62.7604076 105.64697 50.7395924 93.6261543 50.7395924 -1.12615434"></polygon>
                             </g>
                         </g>
                     </g>
                     <g id="CoffeeMug" transform="translate(547.000000, 158.000000)">
                         <path d="M30,28.5 C35.5228475,28.5 38.5,21.5228475 38.5,16 C38.5,10.4771525 35.5228475,6 30,6 C24.4771525,6 20,10.4771525 20,16 C20,21.5228475 24.4771525,28.5 30,28.5 Z" id="Oval" stroke="#98643E" stroke-width="3"></path>
                         <g id="Rectangle">
-                            <mask id="mask-18" fill="white">
-                                <use xlink:href="#path-17"></use>
+                            <mask id="mask-22" fill="white">
+                                <use xlink:href="#path-21"></use>
                             </mask>
-                            <use id="Mask" fill="#AA7046" xlink:href="#path-17"></use>
-                            <rect fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-18)" x="6" y="0" width="4" height="36"></rect>
-                            <rect fill-opacity="0.1" fill="#000000" mask="url(#mask-18)" x="23" y="0" width="7" height="36"></rect>
+                            <use id="Mask" fill="#AA7046" xlink:href="#path-21"></use>
+                            <rect fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-22)" x="6" y="0" width="4" height="36"></rect>
+                            <rect fill-opacity="0.1" fill="#000000" mask="url(#mask-22)" x="23" y="0" width="7" height="36"></rect>
                         </g>
                     </g>
                     <g id="Group-18" transform="translate(551.000000, 118.000000)" fill="#FFFFFF" fill-opacity="0.1">
@@ -220,10 +219,10 @@
                     </g>
                 </g>
                 <g id="Rectangle" transform="translate(229.000000, 267.000000)">
-                    <mask id="mask-20" fill="white">
-                        <use xlink:href="#path-19"></use>
+                    <mask id="mask-24" fill="white">
+                        <use xlink:href="#path-23"></use>
                     </mask>
-                    <use id="Mask" fill="#08447B" xlink:href="#path-19"></use>
+                    <use id="Mask" fill="#08447B" xlink:href="#path-23"></use>
                 </g>
                 <g id="Group-15" transform="translate(100.288545, 260.297167)">
                     <path d="M7.5,0 L97,0 L97,0 L97,15 L7.5,15 C3.35786438,15 5.07265313e-16,11.6421356 0,7.5 C-5.07265313e-16,3.35786438 3.35786438,7.6089797e-16 7.5,0 Z" id="Rectangle" fill="#AA7046"></path>
@@ -234,12 +233,12 @@
                     <path d="M7.5,4 L97,4 L97,4 L97,11 L7.5,11 C5.56700338,11 4,9.43299662 4,7.5 C4,5.56700338 5.56700338,4 7.5,4 Z" id="Rectangle" fill="#EBEBEB"></path>
                 </g>
                 <g id="Rectangle" transform="translate(488.000000, 264.000000)">
-                    <mask id="mask-22" fill="white">
-                        <use xlink:href="#path-21"></use>
+                    <mask id="mask-26" fill="white">
+                        <use xlink:href="#path-25"></use>
                     </mask>
-                    <use id="Mask" fill="#0D5191" xlink:href="#path-21"></use>
-                    <rect fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-22)" x="6" y="0" width="3" height="11"></rect>
-                    <rect fill-opacity="0.1" fill="#000000" mask="url(#mask-22)" x="21" y="0" width="5" height="11"></rect>
+                    <use id="Mask" fill="#0D5191" xlink:href="#path-25"></use>
+                    <rect fill-opacity="0.1" fill="#FFFFFF" mask="url(#mask-26)" x="6" y="0" width="3" height="11"></rect>
+                    <rect fill-opacity="0.1" fill="#000000" mask="url(#mask-26)" x="21" y="0" width="5" height="11"></rect>
                 </g>
                 <polygon id="Rectangle" fill-opacity="0.3" fill="#FDF5CB" points="75.5 201.318681 95 185 275 275 75 275"></polygon>
                 <rect id="Rectangle" fill-opacity="0.5" fill="#000000" x="0" y="472" width="234" height="2" rx="1"></rect>

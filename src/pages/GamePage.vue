@@ -1,26 +1,82 @@
 <template>
-  <v-content class="content">
-    <div class="main-column">
-      <div :class="'title'">Snake Game</div>
+  <ResponsiveWrapper>
+    <div :class="$style.container">
+      <h5 :class="$style.header">All games</h5>
+      <div :class="$style.gamesContainer">
+        <GameListItem
+          :class="$style.listItem"
+          imageSrc="snakegame.jpg"
+          title="The Snake Game"
+          bodyText="Classical game from old Nokia phones. Can you reach 1000 points?"
+          :stars="4"
+        />
+        <GameListItem
+          :class="$style.listItem"
+          imageSrc="snakegame.jpg"
+          title="The Snake Game"
+          bodyText="Classical game from old Nokia phones. Can you reach 1000 points?"
+          :stars="4"
+        />
+        <GameListItem
+          :class="$style.listItem"
+          imageSrc="snakegame.jpg"
+          title="The Snake Game"
+          bodyText="Classical game from old Nokia phones. Can you reach 1000 points?"
+          :stars="4"
+        />
+        <GameListItem
+          :class="$style.listItem"
+          imageSrc="snakegame.jpg"
+          title="The Snake Game"
+          bodyText="Classical game from old Nokia phones. Can you reach 1000 points?"
+          :stars="4"
+        />
+      </div>
     </div>
-  </v-content>
+  </ResponsiveWrapper>
 </template>
 
 <script>
+import ResponsiveWrapper from "@/lib/ResponsiveWrapper";
+import GameListItem from "@/components/GameListItem";
 
+export default {
+  components: {
+    ResponsiveWrapper,
+    GameListItem,
+  },
+};
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" module>
+.container {
+  margin: 40px 0 60px 0;
+}
 
-  .content {
-    background-color: white;// var(--v-backgroundColor-base);
-  }
+.gamesContainer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 40px;
+}
 
-  .main-column {
-    // @extend .display-3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 16px;
+.header {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: variables.$screen-md) {
+  .gamesContainer {
+    grid-template-columns: auto auto;
+    justify-content: start;
+    grid-row-gap: 40px;
+    grid-column-gap: 60px;
   }
+}
+
+@media only screen and (min-width: variables.$screen-lg) {
+  .gamesContainer {
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+  }
+}
 </style>

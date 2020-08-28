@@ -33,7 +33,7 @@ export default {
 
 @media only screen and (min-width: variables.$screen-lg) {
   .container {
-    justify-content: center;
+    align-items: center;
   }
 
   .content {

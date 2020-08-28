@@ -1,7 +1,16 @@
 <template>
+  <router-link
+    :class="[$style.container, $style.textButton, $style[this.kind], $style[this.size]]"
+    v-if="linkTo"
+    :to="linkTo"
+  >
+    <slot />
+  </router-link>
+
   <div
     @click="onClick"
     :class="[$style.container, $style.textButton, $style[this.kind], $style[this.size]]"
+    v-else
   >
     <slot />
   </div>
@@ -16,6 +25,9 @@ export default {
     size: {
       default: "medium",
     },
+    linkTo: {
+      default: null
+    }
   },
   methods: {
     onClick() {
@@ -35,6 +47,7 @@ export default {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   user-select: none;
+  text-decoration: none;
 }
 
 .textButton {

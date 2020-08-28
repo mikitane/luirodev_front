@@ -12,6 +12,13 @@
   line-height: 26px;
 }
 
+@mixin text-p-small {
+  @include text-base;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 22px;
+}
+
 // TODO
 // @mixin text-h1 {
 // font-size: 68px;

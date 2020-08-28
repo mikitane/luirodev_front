@@ -2,10 +2,10 @@
 @use 'variables.scss';
 
 body {
-    background-color: variables.$background-color;
-    margin: 0;
-    padding: 0;
-    -webkit-tap-highlight-color: transparent;
+  background-color: variables.$background-color;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 div {
@@ -13,15 +13,15 @@ div {
 }
 
 p {
-    @include mixins.text-p;
-    margin: 0;
-    padding: 0;
+  @include mixins.text-p;
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
-    @include mixins.text-h3;
-    margin: 0;
-    padding: 0;
+  @include mixins.text-h3;
+  margin: 0;
+  padding: 0;
 }
 
 h4 {
@@ -46,13 +46,29 @@ h6 {
 // Do not add any custom properties to these classes. Always add them to the mixins.
 
 .text-p {
-    @include mixins.text-p;
+  @include mixins.text-p;
+}
+
+.text-p-small {
+  @include mixins.text-p-small;
 }
 
 .text-h3 {
-    @include mixins.text-h3;
+  @include mixins.text-h3;
+}
+
+.text-h4 {
+  @include mixins.text-h4;
+}
+
+.text-h5 {
+  @include mixins.text-h5;
+}
+
+.text-h6 {
+  @include mixins.text-h6;
 }
 
 .text-nav {
-    @include mixins.text-nav;
+  @include mixins.text-nav;
 }

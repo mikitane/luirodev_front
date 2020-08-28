@@ -2,10 +2,13 @@
   <div :class="$style.navbar">
     <div :class="$style.navbarContent">
       <div :class="$style.navbarLeftContent">
-        <img src="@/assets/LuiroDevLogo.png" alt="Luiro Dev Logo" :class="$style.logo" />
+        <router-link :to="{ name: 'home' }">
+          <img src="@/assets/LuiroDevLogo.png" alt="Luiro Dev Logo" :class="$style.logo" />
+        </router-link>
+
         <nav :class="$style.desktopNav">
-          <router-link to="games" class="text-nav" :class="[$style.desktopLink]">Games</router-link>
-          <router-link to="contact" class="text-nav" :class="[$style.desktopLink]">Contact</router-link>
+          <router-link :to="{ name: 'games' }" class="text-nav" :class="[$style.desktopLink]">Games</router-link>
+          <!-- <router-link to="contact" class="text-nav" :class="[$style.desktopLink]">Contact</router-link> -->
         </nav>
       </div>
       <div :class="$style.navbarRightContent">
@@ -129,7 +132,6 @@ export default {
     margin: 0 40px;
   }
 }
-
 
 @media only screen and (min-width: variables.$screen-lg) {
   .navbar {
