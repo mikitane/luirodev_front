@@ -22,3 +22,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+    @use '@/scss/styles.global.scss';
+</style>
