@@ -52,7 +52,7 @@ export default {
             gravity: { y: 1 },
           },
         },
-        scene: [PlaceholderScene, MainScene],
+        scene: [PlaceholderScene, MainScene], // TODO: Initialize Scenes in this.initializeGame
       };
       this.game = new Phaser.Game(gameConfig);
     },
