@@ -28,11 +28,15 @@ export default {
       this.game.registry.set("vue", this);
     });
   },
+  beforeDestroy() {
+    console.log("Destroying game");
+    this.game.destroy();
+  },
 
   data: function () {
     return {
       placeholderSceneInitialized: false,
-      currentScreen: 'MainMenu',
+      currentScreen: "MainMenu",
     };
   },
 
@@ -61,10 +65,10 @@ export default {
     },
     startGame() {
       if (!this.placeholderSceneInitialized) return;
-      console.log('startGame')
+      console.log("startGame");
       this.game.scene.stop("PlaceholderScene");
       this.game.scene.start("MainScene");
-      this.currentScreen = 'MainScene';
+      this.currentScreen = "MainScene";
     },
   },
 };
