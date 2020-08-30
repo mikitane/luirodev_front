@@ -30,7 +30,7 @@ export default {
   },
   beforeDestroy() {
     console.log("Destroying game");
-    this.game.destroy();
+    this.game.destroy(true, false);
   },
 
   data: function () {
