@@ -1,7 +1,10 @@
 const path = require('path');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   configureWebpack: {
+    plugins: [new CompressionPlugin()],
+
     resolve: {
       alias : {
         "icons": path.resolve(__dirname, "node_modules/vue-material-design-icons")

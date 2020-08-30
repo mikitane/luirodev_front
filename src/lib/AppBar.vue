@@ -17,8 +17,7 @@
 
       <transition name="mobileMenu-transition">
         <div :class="$style.mobileMenu" v-if="mobileNavMenuIsOpen">
-          <router-link to="games" class="text-nav">Games</router-link>
-          <router-link to="contact" class="text-nav">Contact</router-link>
+          <h6>Not implemented yet...</h6>
           <v-icon name="times" :class="$style.mobileMenuIcon" @click="showMobileMenuIcon(false)" />
         </div>
       </transition>
@@ -84,6 +83,7 @@ export default {
   color: variables.$on-background-color;
   height: 26px;
   width: auto;
+  margin-left: 20px;
 }
 
 .desktopLink:not(:last-child) {
@@ -95,6 +95,7 @@ export default {
 }
 
 .mobileMenu {
+  display: flex;
   position: fixed;
   left: 0;
   top: 0;
@@ -133,7 +134,7 @@ export default {
   }
 }
 
-@media only screen and (min-width: variables.$screen-lg) {
+@media only screen and (min-width: variables.$screen-xl) {
   .navbar {
     justify-content: center;
   }

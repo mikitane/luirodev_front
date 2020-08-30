@@ -31,7 +31,7 @@ export default {
 }
 
 
-@media only screen and (min-width: variables.$screen-lg) {
+@media only screen and (min-width: variables.$screen-xl) {
   .container {
     align-items: center;
   }

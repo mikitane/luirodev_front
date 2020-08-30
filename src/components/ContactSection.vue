@@ -86,7 +86,7 @@ export default {
   margin-top: 10px;
 }
 
-@media only screen and (min-width: variables.$screen-md) {
+@media only screen and (min-width: variables.$screen-md-minus) {
   .container {
     display: flex;
     align-items: flex-start;

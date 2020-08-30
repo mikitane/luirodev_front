@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
-/dist
+
+# FIXME: Ignore this when local build is not needed to deploy
+#/dist
 
 # local env files
 .env.local

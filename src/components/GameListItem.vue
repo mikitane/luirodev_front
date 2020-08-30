@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.container">
+  <router-link :to="linkTo" :class="$style.container">
     <img :src="getImgUrl(imageSrc)" :class="$style.image" />
     <div :class="$style.infoContainer">
       <div>
@@ -15,7 +15,7 @@
         />
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -33,6 +33,9 @@ export default {
       required: true,
     },
     stars: {
+      required: true,
+    },
+    linkTo: {
       required: true,
     },
   },
@@ -53,8 +56,9 @@ export default {
   height: 380px;
   border-radius: 14px;
   overflow: hidden;
-  transition: all .2s;
+  transition: all 0.2s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .container:hover {
@@ -96,15 +100,29 @@ export default {
 
 @media only screen and (min-width: variables.$screen-sm) {
   .container {
-    width: 320px;
-    height: 320px;
+    width: 380px;
+    height: 380px;
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: variables.$screen-md) {
   .container {
-    width: 360px;
-    height: 360px;
+    width: 330px;
+    height: 330px;
+  }
+}
+
+@media only screen and (min-width: variables.$screen-lg) {
+  .container {
+    width: 390px;
+    height: 390px;
+  }
+}
+
+@media only screen and (min-width: variables.$screen-xl) {
+  .container {
+    width: 370px;
+    height: 370px;
   }
 }
 </style>

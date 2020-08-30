@@ -2,10 +2,10 @@
   <ResponsiveWrapper>
     <div :class="$style.landingPage">
       <div :class="$style.mainContent">
-        <div :class="$style.mainHeader">Games and Stuff</div>
-        <p>
-          Play some random games made by Miika Luiro.<br/>
-          Watch out! You might get hooked.
+        <div :class="$style.mainHeader">Mini games in your browser</div>
+        <p :class="$style.mainText">
+          Play some browser-based mini games without the need to download an app.
+          Watch out! These games might get you hooked!
         </p>
         <Button size="large" linkTo="games" :class="$style.exploreGamesButton">Explore games</Button>
       </div>
@@ -35,18 +35,30 @@ export default {
 
 .mainHeader {
   @include mixins.text-h4;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  max-width: 480px;
+}
+
+.mainText {
+  max-width: 500px;
 }
 
 .exploreGamesButton {
-  margin-top: 40px;
+  width: 100%;
+  margin-top: 32px;
 }
 
 .illustrationWrapper {
   margin: 100px 20px 60px 20px;
 }
 
-@media only screen and (min-width: variables.$screen-md) {
+@media only screen and (min-width: variables.$screen-sm) {
+  .exploreGamesButton {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: variables.$screen-md-minus) {
   .landingPage {
     display: flex;
     align-items: center;
@@ -74,10 +86,9 @@ export default {
   }
 }
 
-@media only screen and (min-width: variables.$screen-lg) {
+@media only screen and (min-width: variables.$screen-xl) {
   .landingPage {
     height: 600px;
   }
 }
-
 </style>

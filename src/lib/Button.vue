@@ -27,7 +27,7 @@ export default {
     },
     linkTo: {
       default: null
-    }
+    },
   },
   methods: {
     onClick() {
@@ -67,12 +67,12 @@ export default {
 .medium {
   font-size: 15px;
   padding: 0 24px;
-  height: 38px;
+  height: 42px;
 }
 
 .large {
-  font-size: 16px;
-  padding: 0 50px;
-  height: 44px;
+  font-size: 17px;
+  padding: 0 40px;
+  height: 50px;
 }
 </style>

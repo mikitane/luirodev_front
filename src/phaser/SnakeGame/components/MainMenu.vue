@@ -1,0 +1,32 @@
+<template>
+  <div :class="$style.container">
+    <h5>The Snake Game</h5>
+    <Button>Start</Button>
+  </div>
+</template>
+
+<script>
+import Button from '@/lib/Button';
+
+export default {
+  props: ['sceneInitialized'],
+  components: {
+    Button,
+  }
+}
+</script>
+
+<style lang="scss" module>
+  .container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+  }
+</style>
