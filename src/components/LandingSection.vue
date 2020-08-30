@@ -36,7 +36,7 @@ export default {
 .mainHeader {
   @include mixins.text-h4;
   margin-bottom: 18px;
-  max-width: 480px;
+  max-width: 320px;
 }
 
 .mainText {
@@ -69,6 +69,7 @@ export default {
   .mainHeader {
     @include mixins.text-h3;
     margin-bottom: 16px;
+    max-width: 480px;
   }
 
   .mainContent {
