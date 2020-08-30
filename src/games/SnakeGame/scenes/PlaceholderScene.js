@@ -3,12 +3,16 @@ import Phaser from 'phaser';
 
 export default class PlaceholderScene extends Phaser.Scene {
   constructor() {
-    super({ key: 'PlaceholderScene', map: {scenePlugin: 'scene', registry: 'registry', game: 'game'} });
+    console.log('PlaceholderScene, init')
+
+    super({ key: 'PlaceholderScene', map: {scenePlugin: 'scene', registry: 'registry', game: 'game', add: 'add'} });
     this.firstUpdate = true;
   }
 
   create() {
-    this.game.registry.get('vue').setPlaceholderSceneInitialized(true);
+    console.log('PlaceholderScene, create')
+    //this.game.registry.get('vue').setPlaceholderSceneInitialized(true);
+    this.add.rectangle(100, 100, 100, 100, 0xffff00, 1)
 
   }
 

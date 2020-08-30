@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <div id="snake-game-container" :class="$style.snakeGameContainer">
-      <MainMenu v-if="currentScreen === 'MainMenu'" @start-game="startGame" />
+      <!-- <MainMenu v-if="currentScreen === 'MainMenu'" @start-game="startGame" /> -->
     </div>
   </div>
 </template>
@@ -10,11 +10,11 @@
 import Phaser from "phaser";
 import PlaceholderScene from "./scenes/PlaceholderScene";
 import MainScene from "./scenes/MainScene";
-import MainMenu from "./components/MainMenu";
+// import MainMenu from "./components/MainMenu";
 
 export default {
   props: ["title"],
-  components: { MainMenu },
+  //components: { MainMenu },
 
   mounted() {
     // $nextTick makes sure that all Vue components are mounted
