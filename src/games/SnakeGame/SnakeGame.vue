@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <div id="snake-game-container" :class="$style.snakeGameContainer">
-      <MainMenu :sceneInitialized="sceneInitialized" />
+      <MainMenu v-if="currentScreen === 'MainMenu'" @start-game="startGame" />
     </div>
   </div>
 </template>
@@ -17,16 +17,22 @@ export default {
   components: { MainMenu },
 
   mounted() {
-    // $nextTick makes sure that all Vue components are mounted.
+    // $nextTick makes sure that all Vue components are mounted
+    // before the game is initialized.
     this.$nextTick(function () {
       this.initializeGame();
+
+      // Scenes can use this component to call methods from Vue side.
+      // This works with an assumption that first Scene is not initialized when
+      // creating a new Game object. In Phaser version 3.24.1 this seems to be the case.
       this.game.registry.set("vue", this);
     });
   },
 
   data: function () {
     return {
-      sceneInitialized: false,
+      placeholderSceneInitialized: false,
+      currentScreen: 'MainMenu',
     };
   },
 
@@ -49,22 +55,16 @@ export default {
         scene: [PlaceholderScene, MainScene],
       };
       this.game = new Phaser.Game(gameConfig);
-      //this.game.scene.start('MainScene')
     },
-    setSceneInitialized(value) {
-      this.sceneInitialized = value;
-      console.log("Vue normal")
-      console.log(this.game.scene.getScenes());
-      console.log(this.game.scene.getScene("PlaceholderScene"));
-
-      setTimeout(() => {
-        console.log("Vue setTimeout")
-        console.log(this.game.scene.getScenes());
-        console.log(this.game.scene.getScene("PlaceholderScene"));
-      }, 1000);
+    setPlaceholderSceneInitialized(value) {
+      this.placeholderSceneInitialized = value;
     },
     startGame() {
-      if (!this.sceneInitialized) return;
+      if (!this.placeholderSceneInitialized) return;
+      console.log('startGame')
+      this.game.scene.stop("PlaceholderScene");
+      this.game.scene.start("MainScene");
+      this.currentScreen = 'MainScene';
     },
   },
 };

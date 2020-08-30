@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <h5>The Snake Game</h5>
-    <Button>Start</Button>
+    <Button @onClick="$emit('start-game')" >Start</Button>
   </div>
 </template>
 
@@ -9,7 +9,6 @@
 import Button from '@/lib/Button';
 
 export default {
-  props: ['sceneInitialized'],
   components: {
     Button,
   }

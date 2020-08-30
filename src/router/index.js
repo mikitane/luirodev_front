@@ -26,7 +26,7 @@ const routes = [
     children: [
       {
         path: 'snake-game',
-        component: () => import('../phaser/SnakeGame'),
+        component: () => import('../games/SnakeGame'),
         name: 'snake-game',
       },
     ]
