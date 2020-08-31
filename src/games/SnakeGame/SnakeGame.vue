@@ -1,31 +1,31 @@
 <template>
   <div :class="$style.container">
     <div id="snake-game-container" :class="$style.snakeGameContainer">
-      <!-- <MainMenu v-if="currentScreen === 'MainMenu'" @start-game="startGame" /> -->
+      <MainMenu v-if="currentScreen === 'MainMenu'" @start-game-clicked="startGameClicked" />
+      <GameOver v-if="currentScreen === 'GameOver'" @play-again-clicked="playAgainClicked" />
     </div>
   </div>
 </template>
 
 <script>
 import Phaser from "phaser";
-import PlaceholderScene from "./scenes/PlaceholderScene";
+import MainMenuScene from "./scenes/MainMenuScene";
 import MainScene from "./scenes/MainScene";
-// import MainMenu from "./components/MainMenu";
+import GameOverScene from "./scenes/GameOverScene";
+import MainMenu from "./components/MainMenu";
+import GameOver from "./components/GameOver";
+import { BOARD_HEIGHT_PX, BOARD_WIDTH_PX } from '@/games/SnakeGame/consts';
 
 export default {
   props: ["title"],
-  //components: { MainMenu },
+  components: { MainMenu, GameOver },
 
   mounted() {
     // $nextTick makes sure that all Vue components are mounted
     // before the game is initialized.
     this.$nextTick(function () {
       this.initializeGame();
-
-      // Scenes can use this component to call methods from Vue side.
-      // This works with an assumption that first Scene is not initialized when
-      // creating a new Game object. In Phaser version 3.24.1 this seems to be the case.
-      this.game.registry.set("vue", this);
+      this.initializeScenes();
     });
   },
   beforeDestroy() {
@@ -35,8 +35,7 @@ export default {
 
   data: function () {
     return {
-      placeholderSceneInitialized: false,
-      currentScreen: "MainMenu",
+      currentScreen: null,
     };
   },
 
@@ -44,8 +43,8 @@ export default {
     initializeGame() {
       const gameConfig = {
         type: Phaser.AUTO,
-        width: 800,
-        height: 600,
+        width: BOARD_WIDTH_PX,
+        height: BOARD_HEIGHT_PX,
         parent: "snake-game-container",
         scale: {
           mode: Phaser.Scale.FIT,
@@ -56,20 +55,27 @@ export default {
             gravity: { y: 1 },
           },
         },
-        scene: [PlaceholderScene, MainScene], // TODO: Initialize Scenes in this.initializeGame
       };
+
       this.game = new Phaser.Game(gameConfig);
+
+      // Scenes can use this component to call methods from Vue side.
+      this.game.registry.set("vue-SnakeGame", this);
     },
-    setPlaceholderSceneInitialized(value) {
-      this.placeholderSceneInitialized = value;
+    initializeScenes() {
+      this.game.scene.add("MainMenuScene", MainMenuScene, true);
+      this.game.scene.add("MainScene", MainScene, false);
+      this.game.scene.add("GameOverScene", GameOverScene, false);
     },
-    startGame() {
-      if (!this.placeholderSceneInitialized) return;
-      console.log("startGame");
-      this.game.scene.stop("PlaceholderScene");
-      this.game.scene.start("MainScene");
-      this.currentScreen = "MainScene";
+    showScreen(screen) {
+      this.currentScreen = screen;
     },
+    startGameClicked() {
+      this.game.scene.getScene("MainMenuScene").startGame();
+    },
+    playAgainClicked() {
+      this.game.scene.getScene("GameOverScene").playAgain();
+    }
   },
 };
 </script>

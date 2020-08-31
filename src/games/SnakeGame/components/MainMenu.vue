@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <h5>The Snake Game</h5>
-    <Button @onClick="$emit('start-game')" >Start</Button>
+    <Button @onClick="$emit('start-game-clicked')" >Start</Button>
   </div>
 </template>
 
