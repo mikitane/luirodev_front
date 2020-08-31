@@ -5,9 +5,11 @@ import {
   BORDER_WIDTH_PX,
   BOARD_WIDTH_PX,
   BOARD_HEIGHT_PX,
+  SNAKE_MOVES_PER_SECOND,
   // MOVEMENT,
 } from '@/games/SnakeGame/consts';
 import { MOVEMENT } from '../consts';
+import FoodService from '../game-objects/FoodService';
 
 // TODO: Proper re-initialization when playing again
 export default class MainScene extends Phaser.Scene {
@@ -21,6 +23,9 @@ export default class MainScene extends Phaser.Scene {
 
     this.nextMoveDirection = null;
     this.snake = new Snake(this, gameArea);
+
+    this.foodService = new FoodService(this, gameArea);
+    this.foodService.addFood(this.snake.getCurrentCoordinates());
   }
 
   update(time) {
@@ -30,15 +35,33 @@ export default class MainScene extends Phaser.Scene {
       currentTime = time.getTime();
     }
 
-    if (!this.latestUpdate || currentTime - this.latestUpdate > 500) {
-      const snakeParts = this.snake.calculateNewCoordinates(this.nextMoveDirection);
+    if (
+      !this.latestUpdate ||
+      currentTime - this.latestUpdate > 1000 / SNAKE_MOVES_PER_SECOND
+    ) {
+      const newSnakeCoordinates = this.snake.calculateNewCoordinates(
+        this.nextMoveDirection
+      );
 
-      if (!this.validateSnakeLocation(snakeParts)) {
+      if (!this.snake.validateLocation(newSnakeCoordinates)) {
         this.gameOver();
-        return
+        return;
       }
 
-      this.snake.move();
+      const headCoordinates = newSnakeCoordinates[0];
+      const foodLocation = this.foodService.foodLocation;
+
+      const snakeOnFood =
+        foodLocation &&
+        foodLocation.x === headCoordinates.x &&
+        foodLocation.y === headCoordinates.y;
+
+      this.snake.move(newSnakeCoordinates, snakeOnFood);
+
+      if (snakeOnFood) {
+        this.foodService.addFood(this.snake.getCurrentCoordinates());
+      }
+
       this.nextMoveDirection = null;
       this.latestUpdate = currentTime;
     }
@@ -93,21 +116,8 @@ export default class MainScene extends Phaser.Scene {
     this.nextMoveDirection = keys[event.key];
   };
 
-  validateSnakeLocation = (snakeParts) => {
-    const headCoordinates = snakeParts[0].coordinates;
-
-    if (
-      headCoordinates.x < 1 ||
-      headCoordinates.x > 11 ||
-      headCoordinates.y < 1 ||
-      headCoordinates.y > 11
-    ) return false;
-
-    return true;
-  };
-
   gameOver = () => {
     this.scene.stop('MainScene');
     this.scene.start('GameOverScene');
-  }
+  };
 }
