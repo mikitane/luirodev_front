@@ -1,71 +1,152 @@
+import { isEqual } from 'lodash';
+
 import {
   BOARD_HEIGHT,
   BOARD_WIDTH,
   BLOCK_SIZE_PX,
-  SNAKE_COLOR,
-  MOVEMENT,
+  // SNAKE_COLOR,
+  DIRECTIONS,
 } from '@/games/SnakeGame/consts';
 
-import { coordinatesToPx } from '@/games/SnakeGame/helpers';
+import {
+  coordinatesToPx,
+  directionToAngle,
+  getImgUrl,
+} from '@/games/SnakeGame/helpers';
 
 export default class Snake {
+  static preloadAssets(scene) {
+    scene.load.image('SnakeBody', getImgUrl('SnakeBody.png'));
+    scene.load.image('SnakeCurveBody', getImgUrl('SnakeCurveBody.png'));
+    scene.load.image('SnakeHead', getImgUrl('SnakeHead.png'));
+    scene.load.image('SnakeTail', getImgUrl('SnakeTail.png'));
+  }
+
   constructor(scene, gameArea) {
     this.scene = scene;
     this.gameArea = gameArea;
-    this.moveDirection = MOVEMENT.RIGHT;
+    this.moveDirection = DIRECTIONS.RIGHT;
     this.parts = [];
+    this.displayParts = [];
 
     this.initializeParts();
+    this.draw();
   }
 
   initializeParts = () => {
-    this.addPart({
-      x: Math.ceil(BOARD_WIDTH / 2),
-      y: Math.ceil(BOARD_HEIGHT / 2),
+    this.parts.push({
+      x: Math.ceil(3),
+      y: Math.ceil(1),
     });
 
-    this.addPart({
-      x: Math.ceil(BOARD_WIDTH / 2 - 1),
-      y: Math.ceil(BOARD_HEIGHT / 2),
+    this.parts.push({
+      x: Math.ceil(2),
+      y: Math.ceil(1),
     });
 
-    this.addPart({
-      x: Math.ceil(BOARD_WIDTH / 2 - 2),
-      y: Math.ceil(BOARD_HEIGHT / 2),
+    this.parts.push({
+      x: Math.ceil(1),
+      y: Math.ceil(1),
     });
-  }
-
-  addPart = ({ x, y }) => {
-    const coordinatesInPx = coordinatesToPx({ x, y });
-
-    const rect = this.scene.add
-      .rectangle(
-        coordinatesInPx.x,
-        coordinatesInPx.y,
-        BLOCK_SIZE_PX,
-        BLOCK_SIZE_PX,
-        SNAKE_COLOR,
-        1
-      )
-      .setOrigin(0);
-
-    this.gameArea.add(rect);
-    this.parts.push({ coordinates: { x, y }, rect });
   };
 
-  getCurrentCoordinates = () => {
-    return this.parts.map((part) => part.coordinates);
+  draw = () => {
+    this.displayParts.forEach((displayPart) => displayPart.destroy());
+    this.displayParts = [];
+
+    this.parts.forEach((part, index) => {
+      const coordinatesPx = coordinatesToPx({ x: part.x, y: part.y });
+
+      const prevPart = index === 0 ? null : this.parts[index - 1];
+      const nextPart =
+        index === this.parts.length - 1 ? null : this.parts[index + 1];
+
+      const prevPartSide = this.getSideAgainstOtherPart(part, prevPart);
+      const nextPartSide = this.getSideAgainstOtherPart(part, nextPart);
+
+      const adjacentPartSides = new Set([prevPartSide, nextPartSide]);
+
+      const bodyCombinations = [
+        {
+          combination: new Set([DIRECTIONS.UP, DIRECTIONS.DOWN]),
+          rotation: DIRECTIONS.UP,
+        },
+        {
+          combination: new Set([DIRECTIONS.RIGHT, DIRECTIONS.LEFT]),
+          rotation: DIRECTIONS.RIGHT,
+        },
+      ];
+
+      const curveBodyCombinations = [
+        {
+          combination: new Set([DIRECTIONS.UP, DIRECTIONS.RIGHT]),
+          rotation: DIRECTIONS.UP,
+        },
+        {
+          combination: new Set([DIRECTIONS.LEFT, DIRECTIONS.UP]),
+          rotation: DIRECTIONS.LEFT,
+        },
+        {
+          combination: new Set([DIRECTIONS.RIGHT, DIRECTIONS.DOWN]),
+          rotation: DIRECTIONS.RIGHT,
+        },
+        {
+          combination: new Set([DIRECTIONS.DOWN, DIRECTIONS.LEFT]),
+          rotation: DIRECTIONS.DOWN,
+        },
+      ];
+
+      const bodyCombination = bodyCombinations.find((c) =>
+        isEqual(c.combination, adjacentPartSides)
+      );
+      const curveBodyCombination = curveBodyCombinations.find((c) =>
+        isEqual(c.combination, adjacentPartSides)
+      );
+
+      let [image, rotation] = [];
+
+      if (parseInt(index) === 0) {
+        [image, rotation] = ['SnakeHead', this.moveDirection];
+      } else if (bodyCombination) {
+        [image, rotation] = ['SnakeBody', bodyCombination.rotation];
+      } else if (curveBodyCombination) {
+        [image, rotation] = ['SnakeCurveBody', curveBodyCombination.rotation];
+      } else if (parseInt(index) === this.parts.length - 1) {
+        [image, rotation] = ['SnakeTail', prevPartSide];
+      } else {
+        throw new Error('Can not find part to draw');
+      }
+
+      const displayPart = this.scene.add
+        .image(coordinatesPx.x, coordinatesPx.y, image)
+        .setDisplaySize(BLOCK_SIZE_PX, BLOCK_SIZE_PX)
+        .setAngle(directionToAngle(rotation));
+
+      this.gameArea.add(displayPart);
+      this.displayParts.push(displayPart);
+    });
   };
 
-  getHeadCoordinates = () => {
-    return this.parts[0].coordinates;
+  getSideAgainstOtherPart = (part, otherPart) => {
+    if (!part || !otherPart) return null;
+
+    if (part.x > otherPart.x) return DIRECTIONS.LEFT;
+    if (part.x < otherPart.x) return DIRECTIONS.RIGHT;
+    if (part.y > otherPart.y) return DIRECTIONS.UP;
+    if (part.y < otherPart.y) return DIRECTIONS.DOWN;
+
+    throw Error('Failed to getSideAgainstOtherPart');
   };
 
-  getLastPartCoordinates = () => {
-    return this.parts[this.parts.length - 1].coordinates;
+  getHeadPart = () => {
+    return this.parts[0];
   };
 
-  calculateNewCoordinates = (moveDirection) => {
+  getLastPart = () => {
+    return this.parts[this.parts.length - 1];
+  };
+
+  calculateNewParts = (moveDirection) => {
     this.moveDirection = moveDirection || this.moveDirection;
     let newCoordinates = [];
     let prevPart;
@@ -74,21 +155,21 @@ export default class Snake {
       // Body of the snake
       if (prevPart) {
         newCoordinates.push({
-          x: prevPart.coordinates.x,
-          y: prevPart.coordinates.y,
+          x: prevPart.x,
+          y: prevPart.y,
         });
         prevPart = part;
         continue;
       }
 
       // Head of the snake
-      let headCoordinates = { x: part.coordinates.x, y: part.coordinates.y };
+      let headCoordinates = { x: part.x, y: part.y };
 
       const coordinateChanges = {
-        [MOVEMENT.UP]: ['y', -1],
-        [MOVEMENT.RIGHT]: ['x', 1],
-        [MOVEMENT.DOWN]: ['y', 1],
-        [MOVEMENT.LEFT]: ['x', -1],
+        [DIRECTIONS.UP]: ['y', -1],
+        [DIRECTIONS.RIGHT]: ['x', 1],
+        [DIRECTIONS.DOWN]: ['y', 1],
+        [DIRECTIONS.LEFT]: ['x', -1],
       };
 
       const coordinateChange = coordinateChanges[this.moveDirection];
@@ -103,47 +184,34 @@ export default class Snake {
   };
 
   move = (newCoordinates, shouldGrow) => {
-    const lastPartCoordinates = this.getLastPartCoordinates();
+    const lastPart = this.getLastPart();
 
-    for (let index in newCoordinates) {
-      const coordinates = newCoordinates[index];
-
-      const part = this.parts[index];
-      part.coordinates = coordinates;
-
-      const coordinatesInPx = coordinatesToPx({
-        x: coordinates.x,
-        y: coordinates.y,
-      });
-
-      part.rect.setPosition(coordinatesInPx.x, coordinatesInPx.y);
-    }
+    this.parts = newCoordinates;
 
     if (shouldGrow) {
-      this.addPart(lastPartCoordinates);
+      this.parts.push(lastPart);
     }
+
+    this.draw();
   };
 
-  validateLocation = (location) => {
-    const headCoordinates = location[0];
+  validateLocation = (parts) => {
+    const headPart = parts[0];
 
     if (
-      headCoordinates.x < 1 ||
-      headCoordinates.x > BOARD_WIDTH ||
-      headCoordinates.y < 1 ||
-      headCoordinates.y > BOARD_HEIGHT
+      headPart.x < 1 ||
+      headPart.x > BOARD_WIDTH ||
+      headPart.y < 1 ||
+      headPart.y > BOARD_HEIGHT
     )
       return false;
 
-    for (let index in location) {
+    for (let index in parts) {
       if (parseInt(index) === 0) continue;
 
-      const coordinates = location[index];
+      const otherPart = parts[index];
 
-      if (
-        headCoordinates.x === coordinates.x &&
-        headCoordinates.y === coordinates.y
-      ) {
+      if (headPart.x === otherPart.x && headPart.y === otherPart.y) {
         return false;
       }
     }

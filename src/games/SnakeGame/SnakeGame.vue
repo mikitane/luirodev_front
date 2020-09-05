@@ -1,26 +1,32 @@
 <template>
   <div :class="$style.container">
-    <div id="snake-game-container" :class="$style.snakeGameContainer">
-      <MainMenu v-if="currentScreen === 'MainMenu'" @start-game-clicked="startGameClicked" />
-      <GameOver v-if="currentScreen === 'GameOver'" @play-again-clicked="playAgainClicked" />
+    <Scores v-if="currentScene === 'MainScene'" :score="score" />
+    <div :class="$style.snakeGameContainer" ref="snakeGameContainer" :style="{height: boardHeight}">
+      <MainMenu v-if="currentScene === 'MainMenu'" @start-game-clicked="startGameClicked" />
+      <GameOver v-if="currentScene === 'GameOver'" @play-again-clicked="playAgainClicked" />
+      <div id="snake-game-phaser-container" :class="$style.snakeGamePhaserContainer" />
     </div>
+    <Controls @handle-click="handleControlClicked" />
   </div>
 </template>
 
 <script>
 import Phaser from "phaser";
 import MainMenuScene from "./scenes/MainMenuScene";
-import MainScene from "./scenes/MainScene";
-import GameOverScene from "./scenes/GameOverScene";
 import MainMenu from "./components/MainMenu";
 import GameOver from "./components/GameOver";
-import { BOARD_HEIGHT_PX, BOARD_WIDTH_PX } from '@/games/SnakeGame/consts';
+import Scores from "./components/Scores";
+import Controls from "./components/Controls";
+import { BOARD_HEIGHT_PX, BOARD_WIDTH_PX } from "@/games/SnakeGame/consts";
 
 export default {
   props: ["title"],
-  components: { MainMenu, GameOver },
+  components: { MainMenu, Scores, Controls, GameOver },
 
   mounted() {
+    this.updateBoardSize();
+    window.addEventListener("resize", this.updateBoardSize);
+
     // $nextTick makes sure that all Vue components are mounted
     // before the game is initialized.
     this.$nextTick(function () {
@@ -29,25 +35,38 @@ export default {
     });
   },
   beforeDestroy() {
-    console.log("Destroying game");
+    window.removeEventListener('resize', this.updateBoardSize)
     this.game.destroy(true, false);
   },
 
   data: function () {
     return {
-      currentScreen: null,
+      currentScene: null,
+      boardWidth: null,
+      score: 0,
     };
+  },
+  computed: {
+    boardHeight() {
+      const aspectRatio = BOARD_HEIGHT_PX / BOARD_WIDTH_PX;
+      return `${this.boardWidth * aspectRatio}px`;
+    },
   },
 
   methods: {
+    updateBoardSize() {
+      this.boardWidth = this.$refs.snakeGameContainer.clientWidth;
+    },
     initializeGame() {
       const gameConfig = {
         type: Phaser.AUTO,
         width: BOARD_WIDTH_PX,
         height: BOARD_HEIGHT_PX,
-        parent: "snake-game-container",
+        parent: "snake-game-phaser-container",
         scale: {
           mode: Phaser.Scale.FIT,
+          autoCenter: Phaser.Scale.CENTER_BOTH,
+          parent: "snake-game-phaser-container",
         },
         physics: {
           default: "arcade",
@@ -59,22 +78,24 @@ export default {
 
       this.game = new Phaser.Game(gameConfig);
 
-      // Scenes can use this component to call methods from Vue side.
+      // Phaser scenes can use this component to call methods from Vue side.
       this.game.registry.set("vue-SnakeGame", this);
     },
     initializeScenes() {
       this.game.scene.add("MainMenuScene", MainMenuScene, true);
-      this.game.scene.add("MainScene", MainScene, false);
-      this.game.scene.add("GameOverScene", GameOverScene, false);
     },
-    showScreen(screen) {
-      this.currentScreen = screen;
+    setCurrentScene(scene) {
+      this.currentScene = scene;
     },
     startGameClicked() {
       this.game.scene.getScene("MainMenuScene").startGame();
     },
     playAgainClicked() {
       this.game.scene.getScene("GameOverScene").playAgain();
+    },
+    handleControlClicked(direction) {
+      console.log("handleControlClicked", direction)
+      this.game.scene.getScene('MainScene').changeMoveDirection(direction);
     }
   },
 };
@@ -87,7 +108,6 @@ export default {
   align-items: center;
   width: 100%;
   height: auto;
-  max-width: 600px;
 }
 
 .header {
@@ -96,5 +116,19 @@ export default {
 
 .snakeGameContainer {
   position: relative;
+  width: 100%;
+  max-width: 600px;
 }
+
+.snakeGamePhaserContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+// @media only screen and (min-width: variables.$screen-sm) {
+//   .snakeGameContainer {
+//     width: ;
+//   }
+// }
 </style>

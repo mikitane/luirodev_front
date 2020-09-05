@@ -1,8 +1,16 @@
 import { range, sample } from 'lodash';
-import { BOARD_HEIGHT, BOARD_WIDTH, FOOD_COLOR, BLOCK_SIZE_PX } from '@/games/SnakeGame/consts';
-import { coordinatesToPx } from '@/games/SnakeGame/helpers';
+import {
+  BOARD_HEIGHT,
+  BOARD_WIDTH,
+  BLOCK_SIZE_PX,
+} from '@/games/SnakeGame/consts';
+import { coordinatesToPx, getImgUrl } from '@/games/SnakeGame/helpers';
 
 export default class FoodService {
+  static preloadAssets(scene) {
+    scene.load.image('Cherry', getImgUrl('Cherry.png'));
+  }
+
   constructor(scene, gameArea) {
     this.scene = scene;
     this.gameArea = gameArea;
@@ -12,12 +20,26 @@ export default class FoodService {
 
   // TODO: Complexity O(n^2), could be lower?
   addFood = (snakeLocation) => {
-    if (this.foodRect) {
-      this.foodRect.destroy();
-    }
+    this.foodLocation = this.calculatePossibleFoodLocation(snakeLocation)
+    this.draw();
+  };
 
-    this.foodLocation = null;
+  draw = () => {
+    if (this.foodRect) this.foodRect.destroy();
 
+    const coordinatesPx = coordinatesToPx({
+      x: this.foodLocation.x,
+      y: this.foodLocation.y,
+    });
+
+    this.foodRect = this.scene.add
+      .image(coordinatesPx.x, coordinatesPx.y, 'Cherry')
+      .setDisplaySize(BLOCK_SIZE_PX, BLOCK_SIZE_PX);
+
+    this.gameArea.add(this.foodRect);
+  };
+
+  calculatePossibleFoodLocation = (snakeLocation) => {
     const snakeLocationMap = {};
 
     for (let { x, y } of snakeLocation) {
@@ -40,22 +62,8 @@ export default class FoodService {
       }
     }
 
-    if (!possibleLocations.length) return;
+    if (!possibleLocations.length) return null;
 
-    this.foodLocation = sample(possibleLocations);
-    const coordinatesInPx = coordinatesToPx(this.foodLocation);
-
-    this.foodRect = this.scene.add
-      .rectangle(
-        coordinatesInPx.x,
-        coordinatesInPx.y,
-        BLOCK_SIZE_PX,
-        BLOCK_SIZE_PX,
-        FOOD_COLOR,
-        1
-      )
-      .setOrigin(0);
-
-    this.gameArea.add(this.foodRect);
-  };
+    return sample(possibleLocations);
+  }
 }

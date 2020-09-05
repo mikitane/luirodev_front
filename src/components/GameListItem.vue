@@ -53,7 +53,7 @@ export default {
   flex-direction: column;
   background-color: variables.$secondary-background-color;
   width: 100%;
-  height: 380px;
+  height: 340px;
   border-radius: 14px;
   overflow: hidden;
   transition: all 0.2s;
