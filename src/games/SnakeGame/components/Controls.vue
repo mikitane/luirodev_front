@@ -40,34 +40,31 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: blue;
 }
 
 .buttonUp {
   @extend .button;
   grid-row: 1;
   grid-column: 2;
-  background-color: red;
 }
 
 .buttonRight {
   @extend .button;
   grid-row: 2;
   grid-column: 3;
-  background-color: blue;
 }
 
 .buttonDown {
   @extend .button;
   grid-row: 3;
   grid-column: 2;
-  background-color: yellow;
 }
 
 .buttonLeft {
   @extend .button;
   grid-row: 2;
   grid-column: 1;
-  background-color: green;
 }
 
 .icon {

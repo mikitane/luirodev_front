@@ -4,12 +4,16 @@
       <div :class="$style.pointsHeader">Points</div>
       <div :class="$style.pointsValue">{{ score }}</div>
     </div>
+    <div :class="$style.textContainer">
+      <div :class="$style.pointsHeader">Highscore</div>
+      <div :class="$style.pointsValue">{{ highScore }}</div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["score"],
+  props: ["score", "highScore"],
 };
 </script>
 
@@ -17,6 +21,7 @@ export default {
 .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
   padding: 10px 20px;

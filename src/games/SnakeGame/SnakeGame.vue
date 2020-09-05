@@ -1,12 +1,12 @@
 <template>
   <div :class="$style.container">
-    <Scores v-if="currentScene === 'MainScene'" :score="score" />
+    <Scores v-if="currentScene === 'MainScene'" :score="score" :highScore="highScore" />
     <div :class="$style.snakeGameContainer" ref="snakeGameContainer" :style="{height: boardHeight}">
       <MainMenu v-if="currentScene === 'MainMenu'" @start-game-clicked="startGameClicked" />
       <GameOver v-if="currentScene === 'GameOver'" @play-again-clicked="playAgainClicked" />
       <div id="snake-game-phaser-container" :class="$style.snakeGamePhaserContainer" />
     </div>
-    <Controls @handle-click="handleControlClicked" />
+    <Controls v-if="currentScene === 'MainScene'" @handle-click="handleControlClicked" />
   </div>
 </template>
 
@@ -44,6 +44,7 @@ export default {
       currentScene: null,
       boardWidth: null,
       score: 0,
+      highScore: 0,
     };
   },
   computed: {
@@ -96,6 +97,11 @@ export default {
     handleControlClicked(direction) {
       console.log("handleControlClicked", direction)
       this.game.scene.getScene('MainScene').changeMoveDirection(direction);
+    },
+    updateHighScore() {
+      if (this.score > this.highScore) {
+        this.highScore = this.score;
+      }
     }
   },
 };

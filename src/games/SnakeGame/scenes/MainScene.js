@@ -164,6 +164,7 @@ export default class MainScene extends Phaser.Scene {
 
   handleGameOver = () => {
     this.gameOver = true;
+    this.game.registry.get('vue-SnakeGame').updateHighScore();
     this.scene.add('GameOverScene', GameOverScene, true);
     this.scene.remove('MainScene');
   };
