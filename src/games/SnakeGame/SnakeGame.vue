@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
-    <Scores v-if="currentScene === 'MainScene'" :score="score" :highScore="highScore" />
     <div :class="$style.snakeGameContainer" ref="snakeGameContainer" :style="{height: boardHeight}">
+      <Scores v-if="currentScene === 'MainScene'" :score="score" :highScore="highScore" />
       <MainMenu v-if="currentScene === 'MainMenu'" @start-game-clicked="startGameClicked" />
       <GameOver v-if="currentScene === 'GameOver'" @play-again-clicked="playAgainClicked" />
       <div id="snake-game-phaser-container" :class="$style.snakeGamePhaserContainer" />

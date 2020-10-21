@@ -4,13 +4,18 @@
       <div :class="$style.mainContent">
         <div :class="$style.mainHeader">Mini games in your browser</div>
         <p :class="$style.mainText">
-          Play some browser-based mini games without the need to download an app.
-          Watch out! These games might get you hooked!
+          Play some browser-based mini games without the need to download an
+          app. Watch out! These games might get you hooked!
         </p>
-        <Button size="large" linkTo="games" :class="$style.exploreGamesButton">Explore games</Button>
+        <Button size="large" linkTo="games" :class="$style.exploreGamesButton"
+          >Explore games</Button
+        >
       </div>
       <div :class="$style.illustrationWrapper">
-        <img src="@/assets/ComputerTable.svg" :class="$style.illustration" />
+        <img
+          src="@/assets/LuiroComputerTable.png"
+          :class="$style.illustration"
+        />
       </div>
     </div>
   </ResponsiveWrapper>
@@ -46,6 +51,11 @@ export default {
 .exploreGamesButton {
   width: 100%;
   margin-top: 32px;
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
 }
 
 .illustrationWrapper {

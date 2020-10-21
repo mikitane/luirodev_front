@@ -72,4 +72,10 @@ export default {
   height: auto;
   color: variables.$white;
 }
+
+@media only screen and (min-width: variables.$screen-lg) {
+  .container {
+    display: none;
+  }
+}
 </style>
