@@ -1,13 +1,7 @@
 <template>
   <ResponsiveWrapper :class="$style.wrapperStyles">
     <div :class="$style.container">
-      <div :class="$style.innerContainer">
-        <div :class="$style.section">
-          <img
-            src="@/assets/luirodev-3d-illustration.png"
-            :class="$style.illustration"
-          />
-        </div>
+      <div :class="[$style.innerContainer, $style.reversedRow]">
         <div :class="$style.section">
           <h5 :class="$style.header">What is this page?</h5>
           <p>
@@ -15,6 +9,12 @@
             quite simple but addictive. This site is a hobby project made for
             fun and also for practicing some new web techonologies.
           </p>
+        </div>
+        <div :class="$style.section">
+          <img
+            src="@/assets/luirodev-3d-illustration.png"
+            :class="$style.illustration"
+          />
         </div>
       </div>
 
@@ -81,11 +81,15 @@ export default {
     justify-content: space-between;
   }
 
+  .reversedRow {
+    flex-direction: row-reverse;
+  }
+
   .section {
     flex: 1 1 0;
   }
 
-  .section:not(:first-child) {
+  .section:not(:last-child) {
     margin: 0 0 0 80px;
   }
 
