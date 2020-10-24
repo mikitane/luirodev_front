@@ -73,8 +73,8 @@ export default {
     display: flex;
     align-items: center;
     // padding: 80px 0 80px 0;
-    padding: 0;
-    height: 500px;
+    padding: 0 0 70px 0;
+    height: 450px;
   }
   .mainHeader {
     @include mixins.text-h3;
@@ -99,7 +99,7 @@ export default {
 
 @media only screen and (min-width: variables.$screen-xl) {
   .landingPage {
-    height: 600px;
+    height: 500px;
   }
 }
 </style>
