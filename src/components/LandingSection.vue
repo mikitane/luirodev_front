@@ -59,7 +59,7 @@ export default {
 }
 
 .illustrationWrapper {
-  margin: 100px 0 60px 0;
+  margin: 100px 20px 60px 20px;
 }
 
 @media only screen and (min-width: variables.$screen-sm) {
@@ -87,6 +87,7 @@ export default {
   }
 
   .illustration {
+    max-width: 450px;
     width: 100%;
     height: auto;
   }
